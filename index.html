@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irida Center</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="Logo">
+        <img src="img/Logo.png" alt="">
+    </div>
+    
+    <header class="container">
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">УСЛУГИ</a></li>
+                    <li><a href="#">НОВОСТИ</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                    <li><a href="#">ПРОФИЛЬ</a></li>
+                    <li><a href="#">&#1041;&#1051;&#1054;&#1043;</a></li>
+                </ul>
+            </nav>
+            <button class="phone-copy" type="button" data-copy="+7 (910) 832-04-34">
+                + 7 (910) 832-04-34
+            </button>
+            <p class="work-time">Ежедневно с 10:00 до 21:00</p>
+        </div>
+    </header>
+
+    <div class="hero container">
+        <h1 class="hero-title">Irida Center</h1>
+        <div class="hero--info">
+            <h1>Детейлинг центр</h1>
+            <p>даем вашему авто</p>
+            <p>почувствовать себя новым</p>
+            <button class="btn">ЗАПИСАТЬСЯ НА УСЛУГИ</button>
+        </div>
+    </div>
+    
+    <div class="God">
+        <img src="img/God.jpg" alt="">
+        <div class="god-text">
+            <p>Для нас автомобиль</p>
+            <p>лучший друг</p>
+        </div>
+    </div>
+
+    <section class="garage_img">
+        <div class="garage_text">
+            <p>
+                Мы понимаем, что ваш автомобиль — это не просто средство передвижения,
+                а настоящий любимец.
+            </p>
+            <p>
+                Наша команда обеспечивает полный спектр услуг по уходу за кузовом и
+                внутренними элементами, гарантируя безупречный результат.
+            </p>
+        </div>
+        <div class="garage_visual">
+            <img src="img/cars.png" alt="Автомобиль в студии детейлинга">
+        </div>
+    </section>
+    </div>
+    <script>
+        const phoneCopyButton = document.querySelector(".phone-copy");
+
+        if (phoneCopyButton) {
+            const phoneNumber = phoneCopyButton.dataset.copy;
+            const originalLabel = phoneCopyButton.textContent.trim();
+
+            const setCopiedState = () => {
+                phoneCopyButton.classList.add("copied");
+                phoneCopyButton.textContent = "Скопировано";
+
+                window.setTimeout(() => {
+                    phoneCopyButton.classList.remove("copied");
+                    phoneCopyButton.textContent = originalLabel;
+                }, 1400);
+            };
+
+            phoneCopyButton.addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(phoneNumber);
+                    setCopiedState();
+                } catch (error) {
+                    const fallbackInput = document.createElement("input");
+                    fallbackInput.value = phoneNumber;
+                    document.body.appendChild(fallbackInput);
+                    fallbackInput.select();
+                    document.execCommand("copy");
+                    fallbackInput.remove();
+                    setCopiedState();
+                }
+            });
+        }
+    </script>
+    <div class="info--center">
+        <h1>Наши услуги</h1>
+    </div>
+
+    <section class="cards">
+    <div class="card">
+        <img src="img/Info/BMW-Film.jpg" alt="">
+        <h3>Оклейка плёнкой</h3>
+        <p>Короткое описание карточки.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="img/Info/Polishing.jpg" alt="">
+        <h3>Полирока кузова</h3>
+        <p>Короткое описание карточки.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="img/Info/Dry-cleaning.png" alt="">
+        <h3>Комплексная химчистка салона</h3>
+        <p>Короткое описание карточки.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="img/Info/Car-washing.png" alt="">
+        <h3>Мойка автомобиля</h3>
+        <p>Короткое описание карточки.</p>
+        <button>Подробнее</button>
+    </div>
+    <div class="bottom-btn">
+        <button class="all-btn">Все услуги</button>
+    </div>
+    </section>
+    
+<!-- Контейнер с бонусами для покупателя -->
+<section class="bonus-container">
+    <div class="bonus-header">
+        <h2>Бонусы</h2>
+
+        <div class="slider-controls">
+            <button class="slider-btn prev-btn">←</button>
+            <button class="slider-btn next-btn">→</button>
+        </div>
+    </div>
+
+    <div class="slider-window">
+        <div class="slider-track">
+
+            <div class="bonus-card">
+                <img src="img/Bonus/Sale.jpg">
+
+                <div class="bonus-text">
+                    <h3>Скидка 14%</h3>
+                    <p>Скидка на первую услугу</p>
+                </div>
+            </div>
+
+            
+            <div class="bonus-card">
+                <img src="img/Bonus/Consultation.jpg">
+
+                <div class="bonus-text">
+                    <h3>Консультация</h3>
+                    <p>Бесплатная консультация</p>
+                </div>
+            </div>
+
+            
+            <div class="bonus-card">
+                <img src="img/Bonus/Film.jpeg">
+
+                <div class="bonus-text">
+                    <h3>Подарок</h3>
+                    <p>Если производится полная оклейка авто</p>
+                    <p>-химчистка салона</p>
+                    <p>-нанесение керамики на плёнку</p>
+                    <p>-нанесение гидрофобного покрытия на стекла</p>
+                    <p>Все это бесплатно</p>
+                </div>
+            </div>
+
+            
+            <div class="bonus-card">
+                <img src="img/bonus4.jpg">
+
+                <div class="bonus-text">
+                    <h3>VIP</h3>
+                    <p>Особые условия обслуживания</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

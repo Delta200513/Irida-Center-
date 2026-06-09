@@ -1,0 +1,885 @@
+2026-06-02 15:45:09 | INFO | app.main | GET /health -> 200 in 1.19ms
+2026-06-02 15:45:32 | WARNING | app.main | POST /users/register -> 422 in 12.82ms
+2026-06-02 15:45:32 | WARNING | app.main | POST /service-requests/ -> 422 in 2.68ms
+2026-06-02 15:45:32 | WARNING | app.main | POST /reviews/ -> 401 in 2.36ms
+2026-06-02 15:45:32 | INFO | app.main | GET /reviews/ -> 200 in 16.27ms
+2026-06-02 15:45:32 | INFO | app.main | GET /posts/ -> 200 in 8.11ms
+2026-06-02 15:45:32 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 15:45:32 | INFO | app.main | POST /users/login -> 200 in 200.54ms
+2026-06-02 15:45:32 | INFO | app.main | GET /service-requests/ -> 200 in 7.0ms
+2026-06-02 15:45:32 | INFO | app.routers.contact_requests | Created contact request id=6 for user_id=None
+2026-06-02 15:45:32 | INFO | app.main | POST /contact-requests/ -> 201 in 7.89ms
+2026-06-02 15:45:32 | INFO | app.main | GET /contact-requests/ -> 200 in 3.58ms
+2026-06-02 15:45:51 | INFO | app.routers.users | Registered new user id=20 email=teacherfix_1780404350@example.com
+2026-06-02 15:45:51 | INFO | app.main | POST /users/register -> 201 in 198.02ms
+2026-06-02 15:45:51 | INFO | app.main | GET /users/me -> 200 in 3.54ms
+2026-06-02 15:45:51 | INFO | app.routers.service_requests | Created service request id=9 for user_id=20
+2026-06-02 15:45:51 | INFO | app.main | POST /service-requests/ -> 201 in 11.37ms
+2026-06-02 15:45:51 | INFO | app.routers.reviews | User id=20 created review id=6
+2026-06-02 15:45:51 | INFO | app.main | POST /reviews/ -> 200 in 12.8ms
+2026-06-02 15:45:51 | INFO | app.main | GET /reviews/ -> 200 in 7.58ms
+2026-06-02 15:45:51 | INFO | app.main | GET /posts/ -> 200 in 4.12ms
+2026-06-02 15:45:51 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 15:45:51 | INFO | app.main | POST /users/login -> 200 in 196.18ms
+2026-06-02 15:45:51 | INFO | app.main | GET /service-requests/ -> 200 in 3.61ms
+2026-06-02 15:45:51 | INFO | app.routers.contact_requests | Created contact request id=7 for user_id=None
+2026-06-02 15:45:51 | INFO | app.main | POST /contact-requests/ -> 201 in 4.74ms
+2026-06-02 15:45:51 | INFO | app.main | GET /contact-requests/ -> 200 in 3.1ms
+2026-06-02 15:46:14 | WARNING | app.main | POST /users/register -> 400 in 3.02ms
+2026-06-02 15:46:23 | WARNING | app.main | POST /users/register -> 400 in 3.26ms
+2026-06-02 15:52:07 | INFO | app.routers.users | Registered new user id=21 email=teacherfix_1780404726@example.com
+2026-06-02 15:52:07 | INFO | app.main | POST /users/register -> 201 in 196.96ms
+2026-06-02 15:52:07 | INFO | app.main | GET /users/me -> 200 in 3.26ms
+2026-06-02 15:52:07 | INFO | app.routers.service_requests | Created service request id=10 for user_id=21
+2026-06-02 15:52:07 | INFO | app.main | POST /service-requests/ -> 201 in 7.52ms
+2026-06-02 15:52:07 | INFO | app.routers.reviews | User id=21 created review id=7
+2026-06-02 15:52:07 | INFO | app.main | POST /reviews/ -> 200 in 7.97ms
+2026-06-02 15:52:07 | INFO | app.main | GET /reviews/ -> 200 in 4.82ms
+2026-06-02 15:52:07 | INFO | app.main | GET /posts/ -> 200 in 3.38ms
+2026-06-02 15:52:07 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 15:52:07 | INFO | app.main | POST /users/login -> 200 in 193.89ms
+2026-06-02 15:52:07 | INFO | app.main | GET /service-requests/ -> 200 in 3.71ms
+2026-06-02 15:52:07 | INFO | app.routers.contact_requests | Created contact request id=8 for user_id=None
+2026-06-02 15:52:07 | INFO | app.main | POST /contact-requests/ -> 201 in 4.72ms
+2026-06-02 15:52:07 | INFO | app.main | GET /contact-requests/ -> 200 in 3.05ms
+2026-06-02 15:52:13 | INFO | app.main | GET /posts/ -> 200 in 3.99ms
+2026-06-02 15:52:25 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 15:52:25 | INFO | app.main | POST /users/login -> 200 in 195.55ms
+2026-06-02 15:57:44 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 15:57:44 | INFO | app.main | POST /users/login -> 200 in 191.62ms
+2026-06-02 15:57:44 | WARNING | app.main | POST /posts/ -> 400 in 4.67ms
+2026-06-02 16:52:50 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.28ms
+2026-06-02 16:52:50 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.84ms
+2026-06-02 16:53:02 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.66ms
+2026-06-02 16:53:14 | INFO | app.main | OPTIONS /users/login -> 200 in 0.15ms
+2026-06-02 16:53:14 | INFO | app.routers.users | Successful login for user id=9 email=kudrash13@gmail.com
+2026-06-02 16:53:14 | INFO | app.main | POST /users/login -> 200 in 213.98ms
+2026-06-02 16:53:14 | INFO | app.main | OPTIONS /service-requests/my -> 200 in 0.15ms
+2026-06-02 16:53:14 | INFO | app.main | GET /service-requests/my -> 200 in 8.5ms
+2026-06-02 16:53:22 | INFO | app.main | OPTIONS /users/me -> 200 in 0.16ms
+2026-06-02 16:53:22 | INFO | app.main | GET /users/me -> 200 in 4.35ms
+2026-06-02 16:55:20 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.64ms
+2026-06-02 16:55:20 | INFO | app.main | GET /users/me -> 200 in 4.37ms
+2026-06-02 16:55:20 | INFO | app.main | GET /service-requests/my -> 200 in 5.19ms
+2026-06-02 16:57:18 | INFO | app.main | GET /users/me -> 200 in 4.3ms
+2026-06-02 16:57:18 | INFO | app.main | OPTIONS /posts/ -> 200 in 0.18ms
+2026-06-02 16:57:18 | INFO | app.main | GET /posts/ -> 200 in 16.22ms
+2026-06-02 16:57:18 | INFO | app.main | GET /uploads/news/ccf6c3d8ae3c4af28c769a3eca725aa9.png -> 200 in 33.58ms
+2026-06-02 16:59:42 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.86ms
+2026-06-02 16:59:42 | INFO | app.main | GET /users/me -> 200 in 5.75ms
+2026-06-02 16:59:42 | INFO | app.main | GET /service-requests/my -> 200 in 4.0ms
+2026-06-02 16:59:52 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.62ms
+2026-06-02 17:00:09 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 17:00:09 | INFO | app.main | POST /users/login -> 200 in 194.22ms
+2026-06-02 17:00:09 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.21ms
+2026-06-02 17:00:09 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.14ms
+2026-06-02 17:00:09 | INFO | app.main | GET /service-requests/ -> 200 in 9.21ms
+2026-06-02 17:00:09 | INFO | app.main | GET /contact-requests/ -> 200 in 12.8ms
+2026-06-02 17:12:49 | INFO | app.main | OPTIONS /users/login -> 200 in 0.15ms
+2026-06-02 17:12:50 | WARNING | app.routers.users | Failed login attempt for email=andre200513@outlook.com
+2026-06-02 17:12:50 | WARNING | app.main | POST /users/login -> 400 in 190.19ms
+2026-06-02 17:13:04 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 17:13:04 | INFO | app.main | POST /users/login -> 200 in 192.48ms
+2026-06-02 17:13:04 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.24ms
+2026-06-02 17:13:04 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.15ms
+2026-06-02 17:13:04 | INFO | app.main | GET /service-requests/ -> 200 in 8.55ms
+2026-06-02 17:13:04 | INFO | app.main | GET /contact-requests/ -> 200 in 8.27ms
+2026-06-02 17:13:36 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.16ms
+2026-06-02 17:13:36 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.72ms
+2026-06-02 17:13:36 | INFO | app.main | OPTIONS /users/me -> 200 in 0.12ms
+2026-06-02 17:13:36 | INFO | app.main | GET /users/me -> 200 in 4.14ms
+2026-06-02 17:13:36 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.32ms
+2026-06-02 17:13:36 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.19ms
+2026-06-02 17:13:36 | INFO | app.main | GET /service-requests/ -> 200 in 6.85ms
+2026-06-02 17:13:36 | INFO | app.main | GET /contact-requests/ -> 200 in 6.99ms
+2026-06-02 17:13:59 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.18ms
+2026-06-02 17:13:59 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.49ms
+2026-06-02 17:13:59 | INFO | app.main | OPTIONS /users/me -> 200 in 0.15ms
+2026-06-02 17:13:59 | INFO | app.main | GET /users/me -> 200 in 3.86ms
+2026-06-02 17:13:59 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.29ms
+2026-06-02 17:13:59 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.16ms
+2026-06-02 17:13:59 | INFO | app.main | GET /service-requests/ -> 200 in 7.56ms
+2026-06-02 17:13:59 | INFO | app.main | GET /contact-requests/ -> 200 in 7.88ms
+2026-06-02 19:49:33 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.45ms
+2026-06-02 19:49:33 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.21ms
+2026-06-02 19:49:33 | INFO | app.main | OPTIONS /users/me -> 200 in 0.16ms
+2026-06-02 19:49:33 | WARNING | app.main | GET /users/me -> 401 in 1.88ms
+2026-06-02 19:49:38 | INFO | app.main | OPTIONS /reviews/ -> 200 in 0.15ms
+2026-06-02 19:49:38 | INFO | app.main | GET /reviews/ -> 200 in 26.76ms
+2026-06-02 19:49:38 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.77ms
+2026-06-02 19:49:39 | INFO | app.main | GET /reviews/ -> 200 in 8.26ms
+2026-06-02 19:49:41 | INFO | app.main | GET /posts/ -> 200 in 6.23ms
+2026-06-02 19:49:43 | INFO | app.main | GET /posts/ -> 200 in 5.0ms
+2026-06-02 19:50:00 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.66ms
+2026-06-02 19:50:02 | INFO | app.main | GET /reviews/ -> 200 in 7.79ms
+2026-06-02 19:50:03 | INFO | app.main | GET /posts/ -> 200 in 5.38ms
+2026-06-02 19:50:03 | INFO | app.main | GET /posts/ -> 200 in 6.65ms
+2026-06-02 19:53:22 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.77ms
+2026-06-02 19:53:31 | INFO | app.main | OPTIONS /users/login -> 200 in 0.18ms
+2026-06-02 19:53:32 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 19:53:32 | INFO | app.main | POST /users/login -> 200 in 196.9ms
+2026-06-02 19:53:32 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.29ms
+2026-06-02 19:53:32 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.18ms
+2026-06-02 19:53:32 | INFO | app.main | GET /service-requests/ -> 200 in 7.52ms
+2026-06-02 19:53:32 | INFO | app.main | GET /contact-requests/ -> 200 in 8.21ms
+2026-06-02 19:55:23 | INFO | app.main | GET /users/me -> 200 in 5.07ms
+2026-06-02 19:55:34 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.52ms
+2026-06-02 19:55:34 | INFO | app.main | GET /users/me -> 200 in 5.02ms
+2026-06-02 19:55:34 | INFO | app.main | GET /service-requests/ -> 200 in 7.03ms
+2026-06-02 19:55:34 | INFO | app.main | GET /contact-requests/ -> 200 in 7.53ms
+2026-06-02 19:58:30 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.16ms
+2026-06-02 19:58:30 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.64ms
+2026-06-02 19:58:30 | INFO | app.main | OPTIONS /users/me -> 200 in 0.11ms
+2026-06-02 19:58:30 | INFO | app.main | GET /users/me -> 200 in 4.04ms
+2026-06-02 19:58:30 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.26ms
+2026-06-02 19:58:30 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.19ms
+2026-06-02 19:58:30 | INFO | app.main | GET /service-requests/ -> 200 in 8.17ms
+2026-06-02 19:58:30 | INFO | app.main | GET /contact-requests/ -> 200 in 7.99ms
+2026-06-02 20:03:55 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.15ms
+2026-06-02 20:03:55 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.59ms
+2026-06-02 20:03:55 | INFO | app.main | OPTIONS /users/me -> 200 in 0.12ms
+2026-06-02 20:03:55 | INFO | app.main | GET /users/me -> 200 in 3.92ms
+2026-06-02 20:03:55 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.34ms
+2026-06-02 20:03:55 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.17ms
+2026-06-02 20:03:55 | INFO | app.main | GET /service-requests/ -> 200 in 7.75ms
+2026-06-02 20:03:55 | INFO | app.main | GET /contact-requests/ -> 200 in 7.05ms
+2026-06-02 20:05:46 | INFO | app.main | GET /users/me -> 200 in 6.01ms
+2026-06-02 20:05:47 | INFO | app.main | GET /users/me -> 200 in 6.74ms
+2026-06-02 20:05:47 | INFO | app.main | OPTIONS /posts/ -> 200 in 0.26ms
+2026-06-02 20:05:47 | INFO | app.main | GET /posts/ -> 200 in 9.64ms
+2026-06-02 20:06:06 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.65ms
+2026-06-02 20:06:06 | INFO | app.main | GET /users/me -> 200 in 4.77ms
+2026-06-02 20:06:06 | INFO | app.main | GET /contact-requests/ -> 200 in 7.75ms
+2026-06-02 20:06:06 | INFO | app.main | GET /service-requests/ -> 200 in 9.85ms
+2026-06-02 20:12:44 | INFO | app.main | GET /users/me -> 200 in 4.51ms
+2026-06-02 20:12:56 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.62ms
+2026-06-02 20:12:56 | INFO | app.main | GET /users/me -> 200 in 5.44ms
+2026-06-02 20:12:56 | INFO | app.main | GET /service-requests/ -> 200 in 9.8ms
+2026-06-02 20:12:56 | INFO | app.main | GET /contact-requests/ -> 200 in 8.85ms
+2026-06-02 20:18:43 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.17ms
+2026-06-02 20:18:43 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.65ms
+2026-06-02 20:18:43 | INFO | app.main | OPTIONS /users/me -> 200 in 0.12ms
+2026-06-02 20:18:43 | INFO | app.main | GET /users/me -> 200 in 4.43ms
+2026-06-02 20:18:43 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.3ms
+2026-06-02 20:18:43 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.14ms
+2026-06-02 20:18:43 | INFO | app.main | GET /contact-requests/ -> 200 in 6.17ms
+2026-06-02 20:18:43 | INFO | app.main | GET /service-requests/ -> 200 in 8.18ms
+2026-06-02 20:22:28 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.25ms
+2026-06-02 20:22:28 | INFO | app.main | GET /users/oauth/providers -> 200 in 2.25ms
+2026-06-02 20:22:28 | INFO | app.main | OPTIONS /users/me -> 200 in 0.16ms
+2026-06-02 20:22:28 | INFO | app.main | GET /users/me -> 200 in 23.9ms
+2026-06-02 20:22:28 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.33ms
+2026-06-02 20:22:28 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.16ms
+2026-06-02 20:22:28 | INFO | app.main | GET /service-requests/ -> 200 in 10.87ms
+2026-06-02 20:22:28 | INFO | app.main | GET /contact-requests/ -> 200 in 12.68ms
+2026-06-02 20:22:52 | INFO | app.main | OPTIONS /service-requests/9 -> 200 in 0.2ms
+2026-06-02 20:22:52 | INFO | app.routers.service_requests | Admin id=8 deleted service request id=9
+2026-06-02 20:22:52 | INFO | app.main | DELETE /service-requests/9 -> 200 in 17.2ms
+2026-06-02 20:22:52 | INFO | app.main | GET /service-requests/ -> 200 in 7.62ms
+2026-06-02 20:22:52 | INFO | app.main | GET /contact-requests/ -> 200 in 7.96ms
+2026-06-02 20:29:17 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.16ms
+2026-06-02 20:29:17 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.71ms
+2026-06-02 20:29:17 | INFO | app.main | OPTIONS /users/me -> 200 in 0.12ms
+2026-06-02 20:29:17 | INFO | app.main | GET /users/me -> 200 in 3.98ms
+2026-06-02 20:29:17 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.25ms
+2026-06-02 20:29:17 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.17ms
+2026-06-02 20:29:17 | INFO | app.main | GET /contact-requests/ -> 200 in 6.45ms
+2026-06-02 20:29:17 | INFO | app.main | GET /service-requests/ -> 200 in 8.61ms
+2026-06-02 20:29:32 | INFO | app.main | OPTIONS /service-requests/4 -> 200 in 0.18ms
+2026-06-02 20:29:32 | INFO | app.routers.service_requests | Admin id=8 deleted service request id=4
+2026-06-02 20:29:32 | INFO | app.main | DELETE /service-requests/4 -> 200 in 10.2ms
+2026-06-02 20:29:32 | INFO | app.main | GET /service-requests/ -> 200 in 7.29ms
+2026-06-02 20:29:32 | INFO | app.main | GET /contact-requests/ -> 200 in 7.49ms
+2026-06-02 20:33:34 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.22ms
+2026-06-02 20:33:34 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.45ms
+2026-06-02 20:33:34 | INFO | app.main | OPTIONS /users/me -> 200 in 0.15ms
+2026-06-02 20:33:34 | INFO | app.main | GET /users/me -> 200 in 24.41ms
+2026-06-02 20:33:34 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.15ms
+2026-06-02 20:33:34 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.17ms
+2026-06-02 20:33:34 | INFO | app.main | GET /service-requests/ -> 200 in 9.77ms
+2026-06-02 20:33:34 | INFO | app.main | GET /contact-requests/ -> 200 in 13.44ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.15ms
+2026-06-02 20:33:47 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.6ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/me -> 200 in 0.15ms
+2026-06-02 20:33:47 | INFO | app.main | GET /users/me -> 200 in 3.66ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.32ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.19ms
+2026-06-02 20:33:47 | INFO | app.main | GET /service-requests/ -> 200 in 7.32ms
+2026-06-02 20:33:47 | INFO | app.main | GET /contact-requests/ -> 200 in 7.0ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.18ms
+2026-06-02 20:33:47 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.57ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/me -> 200 in 0.15ms
+2026-06-02 20:33:47 | INFO | app.main | GET /users/me -> 200 in 4.01ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.44ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.68ms
+2026-06-02 20:33:47 | INFO | app.main | GET /contact-requests/ -> 200 in 5.87ms
+2026-06-02 20:33:47 | INFO | app.main | GET /service-requests/ -> 200 in 6.75ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.15ms
+2026-06-02 20:33:47 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.18ms
+2026-06-02 20:33:47 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.73ms
+2026-06-02 20:33:48 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.16ms
+2026-06-02 20:33:48 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.6ms
+2026-06-02 20:33:48 | INFO | app.main | OPTIONS /users/me -> 200 in 0.11ms
+2026-06-02 20:33:48 | INFO | app.main | GET /users/me -> 200 in 3.76ms
+2026-06-02 20:33:48 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.37ms
+2026-06-02 20:33:48 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.61ms
+2026-06-02 20:33:48 | INFO | app.main | GET /contact-requests/ -> 200 in 5.72ms
+2026-06-02 20:33:48 | INFO | app.main | GET /service-requests/ -> 200 in 7.47ms
+2026-06-02 20:35:01 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.25ms
+2026-06-02 20:35:01 | INFO | app.main | GET /users/oauth/providers -> 200 in 2.13ms
+2026-06-02 20:35:01 | INFO | app.main | OPTIONS /users/me -> 200 in 0.13ms
+2026-06-02 20:35:01 | INFO | app.main | GET /users/me -> 200 in 25.73ms
+2026-06-02 20:35:01 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.34ms
+2026-06-02 20:35:01 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.18ms
+2026-06-02 20:35:01 | INFO | app.main | GET /service-requests/ -> 200 in 11.8ms
+2026-06-02 20:35:01 | INFO | app.main | GET /contact-requests/ -> 200 in 13.97ms
+2026-06-02 20:41:10 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.21ms
+2026-06-02 20:41:10 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.81ms
+2026-06-02 20:41:10 | INFO | app.main | OPTIONS /users/me -> 200 in 0.21ms
+2026-06-02 20:41:10 | INFO | app.main | GET /users/me -> 200 in 4.73ms
+2026-06-02 20:41:10 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.27ms
+2026-06-02 20:41:10 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.15ms
+2026-06-02 20:41:10 | INFO | app.main | GET /service-requests/ -> 200 in 8.55ms
+2026-06-02 20:41:10 | INFO | app.main | GET /contact-requests/ -> 200 in 8.96ms
+2026-06-02 20:45:00 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.22ms
+2026-06-02 20:45:00 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.66ms
+2026-06-02 20:45:00 | INFO | app.main | OPTIONS /users/me -> 200 in 0.18ms
+2026-06-02 20:45:00 | INFO | app.main | GET /users/me -> 200 in 7.62ms
+2026-06-02 20:45:00 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.31ms
+2026-06-02 20:45:00 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.21ms
+2026-06-02 20:45:00 | INFO | app.main | GET /service-requests/ -> 200 in 7.26ms
+2026-06-02 20:45:00 | INFO | app.main | GET /contact-requests/ -> 200 in 7.9ms
+2026-06-02 20:45:17 | INFO | app.main | GET /users/me -> 200 in 5.76ms
+2026-06-02 20:45:17 | INFO | app.main | OPTIONS /service-requests/my -> 200 in 0.19ms
+2026-06-02 20:45:17 | INFO | app.main | GET /service-requests/my -> 200 in 6.83ms
+2026-06-02 20:45:17 | INFO | app.main | OPTIONS /reviews/ -> 200 in 0.21ms
+2026-06-02 20:45:18 | INFO | app.main | GET /reviews/ -> 200 in 27.04ms
+2026-06-02 20:45:18 | INFO | app.main | OPTIONS /reviews/admin -> 200 in 0.14ms
+2026-06-02 20:45:18 | INFO | app.main | GET /reviews/admin -> 200 in 8.12ms
+2026-06-02 20:45:31 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.64ms
+2026-06-02 20:45:31 | INFO | app.main | GET /users/me -> 200 in 4.09ms
+2026-06-02 20:45:32 | INFO | app.main | GET /service-requests/ -> 200 in 8.57ms
+2026-06-02 20:45:32 | INFO | app.main | GET /contact-requests/ -> 200 in 7.49ms
+2026-06-02 20:45:33 | INFO | app.main | GET /users/me -> 200 in 5.01ms
+2026-06-02 20:45:33 | INFO | app.main | GET /service-requests/my -> 200 in 3.85ms
+2026-06-02 20:45:33 | INFO | app.main | GET /reviews/ -> 200 in 7.36ms
+2026-06-02 20:45:33 | INFO | app.main | GET /reviews/admin -> 200 in 5.44ms
+2026-06-02 20:45:49 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.88ms
+2026-06-02 20:45:49 | INFO | app.main | GET /users/me -> 200 in 5.49ms
+2026-06-02 20:45:49 | INFO | app.main | GET /service-requests/ -> 200 in 9.6ms
+2026-06-02 20:45:49 | INFO | app.main | GET /contact-requests/ -> 200 in 9.66ms
+2026-06-02 20:48:15 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.19ms
+2026-06-02 20:48:15 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.09ms
+2026-06-02 20:48:15 | INFO | app.main | OPTIONS /users/me -> 200 in 0.29ms
+2026-06-02 20:48:15 | INFO | app.main | GET /users/me -> 200 in 5.78ms
+2026-06-02 20:48:15 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.53ms
+2026-06-02 20:48:15 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.24ms
+2026-06-02 20:48:15 | INFO | app.main | GET /contact-requests/ -> 200 in 9.56ms
+2026-06-02 20:48:15 | INFO | app.main | GET /service-requests/ -> 200 in 13.73ms
+2026-06-02 20:48:34 | INFO | app.main | OPTIONS /contact-requests/7 -> 200 in 0.13ms
+2026-06-02 20:48:34 | INFO | app.routers.contact_requests | Admin id=8 deleted contact request id=7
+2026-06-02 20:48:34 | INFO | app.main | DELETE /contact-requests/7 -> 200 in 20.2ms
+2026-06-02 20:48:34 | INFO | app.main | GET /service-requests/ -> 200 in 8.85ms
+2026-06-02 20:48:34 | INFO | app.main | GET /contact-requests/ -> 200 in 9.11ms
+2026-06-02 20:48:36 | INFO | app.main | OPTIONS /contact-requests/6 -> 200 in 0.14ms
+2026-06-02 20:48:36 | INFO | app.routers.contact_requests | Admin id=8 deleted contact request id=6
+2026-06-02 20:48:36 | INFO | app.main | DELETE /contact-requests/6 -> 200 in 13.81ms
+2026-06-02 20:48:36 | INFO | app.main | GET /service-requests/ -> 200 in 6.06ms
+2026-06-02 20:48:36 | INFO | app.main | GET /contact-requests/ -> 200 in 6.68ms
+2026-06-02 20:48:41 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.2ms
+2026-06-02 20:48:41 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.54ms
+2026-06-02 20:48:41 | INFO | app.main | OPTIONS /users/me -> 200 in 0.19ms
+2026-06-02 20:48:41 | INFO | app.main | GET /users/me -> 200 in 4.28ms
+2026-06-02 20:48:41 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.27ms
+2026-06-02 20:48:41 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.16ms
+2026-06-02 20:48:41 | INFO | app.main | GET /contact-requests/ -> 200 in 8.11ms
+2026-06-02 20:48:41 | INFO | app.main | GET /service-requests/ -> 200 in 9.22ms
+2026-06-02 20:50:45 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.27ms
+2026-06-02 20:50:45 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.07ms
+2026-06-02 20:50:45 | INFO | app.main | OPTIONS /users/me -> 200 in 0.29ms
+2026-06-02 20:50:45 | INFO | app.main | GET /users/me -> 200 in 6.6ms
+2026-06-02 20:50:45 | INFO | app.main | GET /service-requests/ -> 200 in 12.16ms
+2026-06-02 20:50:45 | INFO | app.main | GET /contact-requests/ -> 200 in 12.74ms
+2026-06-02 20:52:39 | INFO | app.main | OPTIONS /users/login -> 200 in 0.15ms
+2026-06-02 20:52:39 | INFO | app.routers.users | Successful login for user id=9 email=kudrash13@gmail.com
+2026-06-02 20:52:39 | INFO | app.main | POST /users/login -> 200 in 212.2ms
+2026-06-02 20:52:39 | INFO | app.main | GET /service-requests/my -> 200 in 4.01ms
+2026-06-02 20:52:41 | INFO | app.main | GET /users/me -> 200 in 4.97ms
+2026-06-02 20:52:41 | INFO | app.main | OPTIONS /posts/ -> 200 in 0.27ms
+2026-06-02 20:52:41 | INFO | app.main | GET /posts/ -> 200 in 21.29ms
+2026-06-02 20:52:58 | INFO | app.routers.contact_requests | Created contact request id=9 for user_id=9
+2026-06-02 20:52:58 | INFO | app.main | POST /contact-requests/ -> 201 in 14.07ms
+2026-06-02 20:53:08 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.72ms
+2026-06-02 20:53:08 | INFO | app.main | GET /users/me -> 200 in 5.01ms
+2026-06-02 20:53:08 | INFO | app.main | GET /service-requests/my -> 200 in 3.96ms
+2026-06-02 20:53:18 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.66ms
+2026-06-02 20:53:18 | INFO | app.main | GET /users/me -> 200 in 4.75ms
+2026-06-02 20:53:18 | INFO | app.main | GET /service-requests/my -> 200 in 5.16ms
+2026-06-02 20:53:18 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.68ms
+2026-06-02 20:53:18 | INFO | app.main | GET /users/me -> 200 in 4.7ms
+2026-06-02 20:53:18 | INFO | app.main | GET /service-requests/my -> 200 in 5.32ms
+2026-06-02 20:53:34 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 20:53:34 | INFO | app.main | POST /users/login -> 200 in 209.36ms
+2026-06-02 20:53:34 | INFO | app.main | GET /contact-requests/ -> 200 in 7.65ms
+2026-06-02 20:53:34 | INFO | app.main | GET /service-requests/ -> 200 in 8.23ms
+2026-06-02 20:57:28 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.2ms
+2026-06-02 20:57:28 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.61ms
+2026-06-02 20:57:28 | INFO | app.main | OPTIONS /users/me -> 200 in 0.14ms
+2026-06-02 20:57:28 | INFO | app.main | GET /users/me -> 200 in 4.18ms
+2026-06-02 20:57:28 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.32ms
+2026-06-02 20:57:28 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.28ms
+2026-06-02 20:57:28 | INFO | app.main | GET /service-requests/ -> 200 in 9.17ms
+2026-06-02 20:57:28 | INFO | app.main | GET /contact-requests/ -> 200 in 8.36ms
+2026-06-02 20:57:46 | INFO | app.main | OPTIONS /contact-requests/9 -> 200 in 0.17ms
+2026-06-02 20:57:46 | INFO | app.routers.contact_requests | Admin id=8 deleted contact request id=9
+2026-06-02 20:57:46 | INFO | app.main | DELETE /contact-requests/9 -> 200 in 9.11ms
+2026-06-02 20:57:46 | INFO | app.main | GET /service-requests/ -> 200 in 7.43ms
+2026-06-02 20:57:46 | INFO | app.main | GET /contact-requests/ -> 200 in 7.25ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.77ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/me -> 200 in 4.99ms
+2026-06-02 20:57:54 | INFO | app.main | GET /contact-requests/ -> 200 in 7.41ms
+2026-06-02 20:57:54 | INFO | app.main | GET /service-requests/ -> 200 in 9.46ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.8ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/me -> 200 in 5.7ms
+2026-06-02 20:57:54 | INFO | app.main | GET /service-requests/ -> 200 in 10.55ms
+2026-06-02 20:57:54 | INFO | app.main | GET /contact-requests/ -> 200 in 11.43ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.63ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/me -> 200 in 5.24ms
+2026-06-02 20:57:54 | INFO | app.main | GET /contact-requests/ -> 200 in 8.73ms
+2026-06-02 20:57:54 | INFO | app.main | GET /service-requests/ -> 200 in 11.41ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.68ms
+2026-06-02 20:57:54 | INFO | app.main | GET /users/me -> 200 in 5.19ms
+2026-06-02 20:57:54 | INFO | app.main | GET /service-requests/ -> 200 in 7.25ms
+2026-06-02 20:57:54 | INFO | app.main | GET /contact-requests/ -> 200 in 7.36ms
+2026-06-02 20:57:55 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.71ms
+2026-06-02 20:57:55 | INFO | app.main | GET /users/me -> 200 in 4.65ms
+2026-06-02 20:57:55 | INFO | app.main | GET /service-requests/ -> 200 in 8.37ms
+2026-06-02 20:57:55 | INFO | app.main | GET /contact-requests/ -> 200 in 9.04ms
+2026-06-02 20:58:02 | INFO | app.routers.users | Successful login for user id=9 email=kudrash13@gmail.com
+2026-06-02 20:58:02 | INFO | app.main | POST /users/login -> 200 in 209.08ms
+2026-06-02 20:58:02 | INFO | app.main | OPTIONS /service-requests/my -> 200 in 0.18ms
+2026-06-02 20:58:02 | INFO | app.main | GET /service-requests/my -> 200 in 4.41ms
+2026-06-02 20:58:08 | INFO | app.main | GET /users/me -> 200 in 6.29ms
+2026-06-02 20:58:08 | INFO | app.main | GET /service-requests/my -> 200 in 5.91ms
+2026-06-02 20:58:08 | INFO | app.main | OPTIONS /reviews/ -> 200 in 0.23ms
+2026-06-02 20:58:08 | INFO | app.main | GET /reviews/ -> 200 in 8.01ms
+2026-06-02 20:58:09 | INFO | app.main | GET /users/me -> 200 in 4.88ms
+2026-06-02 20:58:25 | INFO | app.main | GET /users/me -> 200 in 3.94ms
+2026-06-02 20:58:25 | INFO | app.routers.service_requests | Created service request id=11 for user_id=9
+2026-06-02 20:58:25 | INFO | app.main | POST /service-requests/ -> 201 in 20.74ms
+2026-06-02 20:58:29 | INFO | app.main | GET /users/me -> 200 in 7.06ms
+2026-06-02 20:58:29 | INFO | app.main | GET /posts/ -> 200 in 9.72ms
+2026-06-02 20:58:36 | INFO | app.routers.contact_requests | Created contact request id=10 for user_id=9
+2026-06-02 20:58:36 | INFO | app.main | POST /contact-requests/ -> 201 in 8.36ms
+2026-06-02 20:58:42 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.9ms
+2026-06-02 20:58:42 | INFO | app.main | GET /users/me -> 200 in 4.6ms
+2026-06-02 20:58:42 | INFO | app.main | GET /service-requests/my -> 200 in 5.72ms
+2026-06-02 20:59:01 | WARNING | app.routers.users | Failed login attempt for email=andre200513@outlook.com
+2026-06-02 20:59:01 | WARNING | app.main | POST /users/login -> 400 in 207.56ms
+2026-06-02 20:59:06 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 20:59:06 | INFO | app.main | POST /users/login -> 200 in 208.5ms
+2026-06-02 20:59:06 | INFO | app.main | GET /service-requests/ -> 200 in 8.2ms
+2026-06-02 20:59:06 | INFO | app.main | GET /contact-requests/ -> 200 in 8.39ms
+2026-06-02 21:01:24 | INFO | app.main | GET /health -> 200 in 1.51ms
+2026-06-02 21:01:49 | INFO | app.main | GET /health -> 200 in 0.56ms
+2026-06-02 21:04:39 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.18ms
+2026-06-02 21:04:39 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.6ms
+2026-06-02 21:04:39 | INFO | app.main | OPTIONS /users/me -> 200 in 0.15ms
+2026-06-02 21:04:39 | INFO | app.main | GET /users/me -> 200 in 4.72ms
+2026-06-02 21:04:39 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.32ms
+2026-06-02 21:04:39 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.2ms
+2026-06-02 21:04:39 | INFO | app.main | GET /service-requests/ -> 200 in 8.98ms
+2026-06-02 21:04:39 | INFO | app.main | GET /contact-requests/ -> 200 in 8.04ms
+2026-06-02 21:10:23 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.22ms
+2026-06-02 21:10:23 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.69ms
+2026-06-02 21:10:23 | INFO | app.main | OPTIONS /users/me -> 200 in 0.14ms
+2026-06-02 21:10:23 | INFO | app.main | GET /users/me -> 200 in 4.23ms
+2026-06-02 21:10:23 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.43ms
+2026-06-02 21:10:23 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.32ms
+2026-06-02 21:10:23 | INFO | app.main | GET /contact-requests/ -> 200 in 7.24ms
+2026-06-02 21:10:23 | INFO | app.main | GET /service-requests/ -> 200 in 9.41ms
+2026-06-02 21:12:17 | INFO | app.main | GET /health -> 200 in 0.69ms
+2026-06-02 21:14:10 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.14ms
+2026-06-02 21:14:10 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.01ms
+2026-06-02 21:14:12 | INFO | app.main | OPTIONS /users/login -> 200 in 0.2ms
+2026-06-02 21:14:12 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:14:12 | INFO | app.main | POST /users/login -> 200 in 453.82ms
+2026-06-02 21:14:12 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.41ms
+2026-06-02 21:14:12 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 1.68ms
+2026-06-02 21:14:12 | INFO | app.main | GET /service-requests/ -> 200 in 19.15ms
+2026-06-02 21:14:12 | INFO | app.main | GET /contact-requests/ -> 200 in 15.87ms
+2026-06-02 21:23:44 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.16ms
+2026-06-02 21:23:44 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.67ms
+2026-06-02 21:23:44 | INFO | app.main | OPTIONS /users/me -> 200 in 0.25ms
+2026-06-02 21:23:44 | INFO | app.main | GET /users/me -> 200 in 4.67ms
+2026-06-02 21:23:44 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.37ms
+2026-06-02 21:23:44 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.18ms
+2026-06-02 21:23:44 | INFO | app.main | GET /service-requests/ -> 200 in 8.98ms
+2026-06-02 21:23:44 | INFO | app.main | GET /contact-requests/ -> 200 in 8.79ms
+2026-06-02 21:25:37 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.55ms
+2026-06-02 21:25:37 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.54ms
+2026-06-02 21:26:17 | INFO | app.main | GET /health -> 200 in 0.63ms
+2026-06-02 21:26:46 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.25ms
+2026-06-02 21:26:46 | INFO | app.main | GET /users/oauth/providers -> 200 in 0.68ms
+2026-06-02 21:26:47 | INFO | app.main | OPTIONS /users/login -> 200 in 0.62ms
+2026-06-02 21:26:47 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:26:47 | INFO | app.main | POST /users/login -> 200 in 390.54ms
+2026-06-02 21:26:47 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.65ms
+2026-06-02 21:26:47 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.77ms
+2026-06-02 21:26:47 | INFO | app.main | GET /contact-requests/ -> 200 in 13.06ms
+2026-06-02 21:26:47 | INFO | app.main | GET /service-requests/ -> 200 in 20.14ms
+2026-06-02 21:27:53 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.26ms
+2026-06-02 21:27:53 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.01ms
+2026-06-02 21:27:54 | INFO | app.main | OPTIONS /users/login -> 200 in 0.37ms
+2026-06-02 21:27:54 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:27:54 | INFO | app.main | POST /users/login -> 200 in 357.17ms
+2026-06-02 21:27:54 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.69ms
+2026-06-02 21:27:54 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 6.26ms
+2026-06-02 21:27:54 | INFO | app.main | GET /service-requests/ -> 200 in 33.81ms
+2026-06-02 21:27:54 | INFO | app.main | GET /contact-requests/ -> 200 in 33.61ms
+2026-06-02 21:34:07 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.23ms
+2026-06-02 21:34:07 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.23ms
+2026-06-02 21:34:07 | INFO | app.main | OPTIONS /users/me -> 200 in 0.21ms
+2026-06-02 21:34:07 | INFO | app.main | GET /users/me -> 200 in 5.82ms
+2026-06-02 21:34:07 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.46ms
+2026-06-02 21:34:07 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.22ms
+2026-06-02 21:34:07 | INFO | app.main | GET /service-requests/ -> 200 in 9.9ms
+2026-06-02 21:34:07 | INFO | app.main | GET /contact-requests/ -> 200 in 9.63ms
+2026-06-02 21:37:22 | WARNING | app.main | POST /service-requests/ -> 422 in 3.68ms
+2026-06-02 21:37:22 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:37:22 | INFO | app.main | POST /users/login -> 200 in 286.5ms
+2026-06-02 21:37:22 | INFO | app.main | GET /service-requests/ -> 200 in 4.66ms
+2026-06-02 21:37:22 | WARNING | app.main | PUT /service-requests/ -> 405 in 1.32ms
+2026-06-02 21:37:22 | WARNING | app.main | POST /users/register -> 422 in 3.94ms
+2026-06-02 21:37:22 | WARNING | app.main | POST /service-requests/ -> 422 in 2.06ms
+2026-06-02 21:38:38 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:38:38 | INFO | app.main | POST /users/login -> 200 in 265.37ms
+2026-06-02 21:38:38 | INFO | app.routers.service_requests | Created service request id=12 for user_id=None
+2026-06-02 21:38:38 | INFO | app.main | POST /service-requests/ -> 201 in 30.85ms
+2026-06-02 21:38:38 | INFO | app.main | GET /service-requests/ -> 200 in 9.28ms
+2026-06-02 21:38:38 | INFO | app.routers.service_requests | Admin id=8 updated service request id=12
+2026-06-02 21:38:38 | INFO | app.main | PUT /service-requests/12 -> 200 in 36.65ms
+2026-06-02 21:38:38 | INFO | app.routers.service_requests | Admin id=8 changed service request id=12 status to completed
+2026-06-02 21:38:38 | INFO | app.main | PUT /service-requests/12/status -> 200 in 24.14ms
+2026-06-02 21:38:38 | WARNING | app.main | POST /users/register -> 422 in 1.47ms
+2026-06-02 21:38:38 | WARNING | app.main | POST /service-requests/ -> 422 in 2.78ms
+2026-06-02 21:38:38 | WARNING | app.main | GET /service-requests/my -> 401 in 1.21ms
+2026-06-02 21:38:38 | INFO | app.main | GET /service-requests/ -> 200 in 4.98ms
+2026-06-02 21:38:38 | WARNING | app.main | DELETE /service-requests/my/None -> 401 in 1.93ms
+2026-06-02 21:38:38 | WARNING | app.main | GET /service-requests/my -> 401 in 1.49ms
+2026-06-02 21:38:38 | INFO | app.routers.service_requests | Admin id=8 deleted service request id=12
+2026-06-02 21:38:38 | INFO | app.main | DELETE /service-requests/12 -> 200 in 29.86ms
+2026-06-02 21:38:38 | INFO | app.main | GET /service-requests/ -> 200 in 4.33ms
+2026-06-02 21:38:52 | WARNING | app.main | POST /users/register -> 422 in 2.57ms
+2026-06-02 21:39:30 | INFO | app.routers.users | Registered new user id=22 email=reqlogic.dea998f5@example.com
+2026-06-02 21:39:30 | INFO | app.main | POST /users/register -> 201 in 274.3ms
+2026-06-02 21:39:30 | INFO | app.routers.service_requests | Created service request id=13 for user_id=22
+2026-06-02 21:39:30 | INFO | app.main | POST /service-requests/ -> 201 in 12.55ms
+2026-06-02 21:39:30 | INFO | app.main | GET /service-requests/my -> 200 in 7.46ms
+2026-06-02 21:39:30 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:39:30 | INFO | app.main | POST /users/login -> 200 in 249.7ms
+2026-06-02 21:39:30 | INFO | app.main | GET /service-requests/ -> 200 in 5.28ms
+2026-06-02 21:39:30 | INFO | app.routers.service_requests | User id=22 deleted own service request id=13
+2026-06-02 21:39:31 | INFO | app.main | DELETE /service-requests/my/13 -> 200 in 22.69ms
+2026-06-02 21:40:45 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.16ms
+2026-06-02 21:40:45 | INFO | app.routers.service_requests | Created service request id=14 for user_id=None
+2026-06-02 21:40:45 | INFO | app.main | POST /service-requests/ -> 201 in 13.22ms
+2026-06-02 21:41:03 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:41:03 | INFO | app.main | POST /users/login -> 200 in 270.99ms
+2026-06-02 21:41:03 | INFO | app.main | GET /service-requests/ -> 200 in 8.4ms
+2026-06-02 21:41:04 | INFO | app.routers.service_requests | Admin id=8 deleted service request id=14
+2026-06-02 21:41:04 | INFO | app.main | DELETE /service-requests/14 -> 200 in 14.62ms
+2026-06-02 21:41:37 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 21:41:37 | INFO | app.main | POST /users/login -> 200 in 274.63ms
+2026-06-02 21:43:27 | INFO | app.main | GET /users/me -> 200 in 6.84ms
+2026-06-02 21:43:27 | INFO | app.main | OPTIONS /posts/ -> 200 in 0.21ms
+2026-06-02 21:43:27 | INFO | app.main | GET /posts/ -> 200 in 14.53ms
+2026-06-02 21:43:37 | INFO | app.main | GET /users/me -> 200 in 4.36ms
+2026-06-02 22:47:28 | INFO | app.main | GET /health -> 200 in 1.67ms
+2026-06-02 22:47:49 | INFO | app.routers.service_requests | Created service request id=15 for user_id=None
+2026-06-02 22:47:49 | INFO | app.main | POST /service-requests/ -> 201 in 29.6ms
+2026-06-02 22:47:50 | INFO | app.main | OPTIONS /users/oauth/providers -> 200 in 0.18ms
+2026-06-02 22:47:50 | INFO | app.main | GET /users/oauth/providers -> 200 in 1.32ms
+2026-06-02 22:47:51 | INFO | app.main | OPTIONS /users/login -> 200 in 0.14ms
+2026-06-02 22:47:51 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 22:47:51 | INFO | app.main | POST /users/login -> 200 in 222.34ms
+2026-06-02 22:47:51 | INFO | app.main | OPTIONS /service-requests/ -> 200 in 0.34ms
+2026-06-02 22:47:51 | INFO | app.main | OPTIONS /contact-requests/ -> 200 in 0.73ms
+2026-06-02 22:47:51 | INFO | app.main | GET /contact-requests/ -> 200 in 7.52ms
+2026-06-02 22:47:51 | INFO | app.main | GET /service-requests/ -> 200 in 14.1ms
+2026-06-02 22:47:53 | INFO | app.main | OPTIONS /service-requests/15/status -> 200 in 0.25ms
+2026-06-02 22:47:53 | INFO | app.routers.service_requests | Admin id=8 changed service request id=15 status to pending
+2026-06-02 22:47:53 | INFO | app.main | PUT /service-requests/15/status -> 200 in 13.25ms
+2026-06-02 22:47:53 | INFO | app.main | GET /contact-requests/ -> 200 in 6.97ms
+2026-06-02 22:47:53 | INFO | app.main | GET /service-requests/ -> 200 in 10.12ms
+2026-06-02 22:47:55 | INFO | app.routers.users | Successful login for user id=8 email=andre200513@outlook.com
+2026-06-02 22:47:55 | INFO | app.main | POST /users/login -> 200 in 201.18ms
+2026-06-02 22:47:55 | INFO | app.main | GET /service-requests/ -> 200 in 4.14ms
+2026-06-02 22:47:55 | INFO | app.routers.service_requests | Admin id=8 deleted service request id=15
+2026-06-02 22:47:55 | INFO | app.main | DELETE /service-requests/15 -> 200 in 13.43ms
+2026-06-02 22:58:38 | INFO | app.routers.contact_requests | Created contact request id=11 for user_id=None
+2026-06-02 22:58:38 | INFO | app.main | POST /contact-requests/ -> 201 in 8.42ms
+2026-06-02 22:58:38 | INFO | app.routers.users | Registered new user id=23 email=valcheck.986c87d7@example.com
+2026-06-02 22:58:38 | INFO | app.main | POST /users/register -> 201 in 208.94ms
+2026-06-02 22:58:38 | ERROR | app.routers.reviews | Failed to create review for user_id=23
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'headline' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Project\Irida center\backend\app\routers\reviews.py", line 262, in create_review
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.DataError: (pymysql.err.DataError) (1406, "Data too long for column 'headline' at row 1")
+[SQL: INSERT INTO reviews (user_id, service_request_id, rating, headline, review_text, service_label, status, is_verified, admin_reply, admin_reply_at) VALUES (%(user_id)s, %(service_request_id)s, %(rating)s, %(headline)s, %(review_text)s, %(service_label)s, %(status)s, %(is_verified)s, %(admin_reply)s, %(admin_reply_at)s)]
+[parameters: {'user_id': 23, 'service_request_id': None, 'rating': 5, 'headline': 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', 'review_text': 'xxxxxxxxxxxxxxxxxxxx', 'service_label': 'Test', 'status': 'published', 'is_verified': 0, 'admin_reply': None, 'admin_reply_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-06-02 22:58:38 | ERROR | app.main | POST /reviews/ -> 500 in 170.64ms
+2026-06-02 22:58:38 | INFO | app.routers.reviews | User id=23 created review id=8
+2026-06-02 22:58:38 | INFO | app.main | POST /reviews/ -> 200 in 8.25ms
+2026-06-02 22:58:38 | INFO | app.routers.service_requests | Created service request id=16 for user_id=None
+2026-06-02 22:58:38 | INFO | app.main | POST /service-requests/ -> 201 in 6.99ms
+2026-06-02 22:58:38 | INFO | app.main | GET /posts/ -> 200 in 9.82ms
+2026-06-02 22:58:38 | INFO | app.routers.comments | User id=23 created comment id=4 for post_id=2
+2026-06-02 22:58:38 | INFO | app.main | POST /comments/post/2 -> 200 in 11.24ms
+2026-06-02 22:59:22 | INFO | app.routers.contact_requests | Created contact request id=12 for user_id=None
+2026-06-02 22:59:22 | INFO | app.main | POST /contact-requests/ -> 201 in 6.43ms
+2026-06-02 22:59:22 | INFO | app.routers.users | Registered new user id=24 email=valcheck.96dd7d87@example.com
+2026-06-02 22:59:22 | INFO | app.main | POST /users/register -> 201 in 205.27ms
+2026-06-02 22:59:22 | ERROR | app.routers.reviews | Failed to create review for user_id=24
+Traceback (most recent call last):
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'headline' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Project\Irida center\backend\app\routers\reviews.py", line 262, in create_review
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Python314\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Python314\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.DataError: (pymysql.err.DataError) (1406, "Data too long for column 'headline' at row 1")
+[SQL: INSERT INTO reviews (user_id, service_request_id, rating, headline, review_text, service_label, status, is_verified, admin_reply, admin_reply_at) VALUES (%(user_id)s, %(service_request_id)s, %(rating)s, %(headline)s, %(review_text)s, %(service_label)s, %(status)s, %(is_verified)s, %(admin_reply)s, %(admin_reply_at)s)]
+[parameters: {'user_id': 24, 'service_request_id': None, 'rating': 5, 'headline': 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', 'review_text': 'xxxxxxxxxxxxxxxxxxxx', 'service_label': 'Test', 'status': 'published', 'is_verified': 0, 'admin_reply': None, 'admin_reply_at': None}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2026-06-02 22:59:22 | ERROR | app.main | POST /reviews/ -> 500 in 9.79ms
+2026-06-02 22:59:22 | INFO | app.routers.reviews | User id=24 created review id=9
+2026-06-02 22:59:22 | INFO | app.main | POST /reviews/ -> 200 in 7.2ms
+2026-06-02 22:59:22 | INFO | app.routers.service_requests | Created service request id=17 for user_id=None
+2026-06-02 22:59:22 | INFO | app.main | POST /service-requests/ -> 201 in 6.74ms
+2026-06-02 22:59:22 | INFO | app.main | GET /posts/ -> 200 in 3.92ms
+2026-06-02 22:59:22 | INFO | app.routers.comments | User id=24 created comment id=5 for post_id=2
+2026-06-02 22:59:22 | INFO | app.main | POST /comments/post/2 -> 200 in 6.68ms
+2026-06-02 23:00:14 | INFO | app.main | GET /health -> 200 in 1.34ms
+2026-06-02 23:00:14 | WARNING | app.main | POST /contact-requests/ -> 422 in 2.32ms
+2026-06-02 23:00:14 | INFO | app.routers.users | Registered new user id=25 email=valcheck.fdbd5fc8@example.com
+2026-06-02 23:00:14 | INFO | app.main | POST /users/register -> 201 in 224.89ms
+2026-06-02 23:00:14 | WARNING | app.main | POST /reviews/ -> 422 in 4.33ms
+2026-06-02 23:00:14 | WARNING | app.main | POST /reviews/ -> 422 in 2.59ms
+2026-06-02 23:00:14 | WARNING | app.main | POST /service-requests/ -> 422 in 1.87ms
+2026-06-02 23:00:14 | INFO | app.main | GET /posts/ -> 200 in 10.11ms
+2026-06-02 23:00:14 | WARNING | app.main | POST /comments/post/2 -> 422 in 4.23ms
+2026-06-02 23:04:10 | INFO | app.main | GET /health -> 200 in 0.56ms

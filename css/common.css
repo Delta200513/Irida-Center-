@@ -1,6 +1,9 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Days+One&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +23,11 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+.account-avatar__image[hidden],
+.account-avatar__initials[hidden] {
+    display: none !important;
 }
 
 .container {
@@ -53,6 +61,30 @@ img {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
+}
+
+body.services-page .wrapper::before {
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.42) 72%, rgba(0, 0, 0, 0.92) 100%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.18) 28%, rgba(0, 0, 0, 0.18) 72%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+body.news-page .wrapper::before {
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.42) 72%, rgba(0, 0, 0, 0.92) 100%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.18) 28%, rgba(0, 0, 0, 0.18) 72%, rgba(0, 0, 0, 0.7) 100%),
+        url("../img/News/Ford-mustang.png") center -104px / 88% auto no-repeat;
+}
+
+body.blog-page .wrapper::before,
+body.profile-page .wrapper::before,
+body.reviews-page .wrapper::before {
+    height: clamp(500px, 58vw, 760px);
+    background:
+        radial-gradient(circle at 16% 14%, rgba(0, 255, 226, 0.18) 0%, rgba(0, 255, 226, 0.06) 20%, transparent 42%),
+        radial-gradient(circle at 82% 4%, rgba(234, 196, 110, 0.18) 0%, rgba(234, 196, 110, 0.06) 20%, transparent 40%),
+        linear-gradient(180deg, rgba(5, 10, 12, 0.18) 0%, rgba(5, 8, 10, 0.56) 64%, rgba(5, 8, 10, 0.96) 100%),
+        linear-gradient(115deg, rgba(6, 18, 20, 0.92) 0%, rgba(8, 9, 10, 0.98) 100%);
 }
 
 .wrapper > * {
@@ -205,25 +237,36 @@ nav .active a::after {
     align-self: flex-end;
     color: rgba(255, 255, 255, 0.72);
     font-size: 14px;
+    font-weight: 400;
     letter-spacing: 0.8px;
 }
 
 
 .hero{
-    color:white;
+    color: white;
     width: min(1280px, calc(100% - 80px));
     min-height: clamp(560px, 70vw, 790px);
     margin: 0 auto;
     padding-top: clamp(170px, 18vw, 220px);
     padding-bottom: clamp(90px, 10vw, 140px);
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(340px, 560px) minmax(0, 1fr);
+    grid-template-areas:
+        "title title"
+        "info .";
+    align-content: start;
+    column-gap: clamp(24px, 5vw, 96px);
+    row-gap: clamp(36px, 6vw, 96px);
     font-size: 30px;
 }
 
 .hero-title {
     font-family: 'Aldrich', sans-serif;
+    grid-area: title;
     width: 100%;
-    margin: 0 auto 40px;
+    margin: 0;
+    justify-self: center;
     text-align: center;
     font-size: clamp(72px, 10vw, 140px);
     line-height: 0.9;
@@ -234,20 +277,25 @@ nav .active a::after {
 }
 
 .hero--info {
-    max-width: 620px;
-    margin-left: -250px;
-    margin-top: 128px;
+    grid-area: info;
+    max-width: 560px;
+    margin: 0;
+    align-self: start;
 }
 
 .hero--info h1 {
     font-size: clamp(34px, 4vw, 56px);
-    line-height: 1;
-    margin-bottom: 12px;
+    line-height: 1.02;
+    margin-bottom: 14px;
 }
 
 .hero--info p {
     font-size: clamp(18px, 2.2vw, 30px);
     line-height: 1.3;
+}
+
+.hero--info p + p {
+    margin-top: 6px;
 }
 
 .btn {
@@ -345,7 +393,6 @@ nav .active a::after {
 
 .Logo {
     position: absolute;
-    top: 28px;
     left: 40px;
     z-index: 2;
     width: clamp(120px, 14vw, 220px);
@@ -378,10 +425,6 @@ nav .active a::after {
     line-height: 1;
 }
 
-.work-time {
-    font-weight: 400;
-}
-
 @media (max-width: 1024px) {
     .container,
     header,
@@ -410,11 +453,24 @@ nav .active a::after {
         background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.48) 72%, rgba(0, 0, 0, 0.96) 100%),
             linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.28) 72%, rgba(0, 0, 0, 0.76) 100%),
-            url("../img/Ford.jpg") center 10px / 128% auto no-repeat;
+            url("../img/Ford.png") center 10px / 128% auto no-repeat;
+    }
+
+    body.services-page .wrapper::before {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.48) 72%, rgba(0, 0, 0, 0.96) 100%),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.28) 72%, rgba(0, 0, 0, 0.76) 100%);
+    }
+
+    body.news-page .wrapper::before {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.48) 72%, rgba(0, 0, 0, 0.96) 100%),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.28) 28%, rgba(0, 0, 0, 0.28) 72%, rgba(0, 0, 0, 0.76) 100%),
+            url("../img/News/Ford-mustang.png") center -20px / 128% auto no-repeat;
     }
 
     .Logo {
-        top: 18px;
+        top: 10px;
         left: 20px;
         width: 140px;
     }
@@ -442,19 +498,21 @@ nav .active a::after {
         min-height: 500px;
         padding-top: 150px;
         padding-bottom: 70px;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "title"
+            "info";
+        row-gap: 24px;
         font-size: 20px;
     }
 
     .hero-title {
-        margin-bottom: 24px;
         font-size: clamp(44px, 12vw, 82px);
         letter-spacing: 3px;
     }
 
     .hero--info {
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 28px;
+        max-width: min(100%, 520px);
     }
 
     .btn {
@@ -500,7 +558,20 @@ nav .active a::after {
         background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.52) 72%, rgba(0, 0, 0, 0.98) 100%),
             linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.34) 28%, rgba(0, 0, 0, 0.34) 72%, rgba(0, 0, 0, 0.8) 100%),
-            url("../img/Ford.jpg") center 24px / 165% auto no-repeat;
+            url("../img/Ford.png") center 24px / 165% auto no-repeat;
+    }
+
+    body.services-page .wrapper::before {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.52) 72%, rgba(0, 0, 0, 0.98) 100%),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.34) 28%, rgba(0, 0, 0, 0.34) 72%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+    body.news-page .wrapper::before {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.52) 72%, rgba(0, 0, 0, 0.98) 100%),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.34) 28%, rgba(0, 0, 0, 0.34) 72%, rgba(0, 0, 0, 0.8) 100%),
+            url("../img/News/Ford-mustang.png") center -6px / 165% auto no-repeat;
     }
 
     .Logo {
@@ -525,6 +596,7 @@ nav .active a::after {
     .hero {
         padding-top: 135px;
         min-height: 440px;
+        row-gap: 20px;
     }
 
     .hero-title {
@@ -545,10 +617,12 @@ nav .active a::after {
 
 .info--center h1{
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 18vh;           
-    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    min-height: 18vh;
+    padding: 0 20px;
+    text-align: center;
+    font-size: clamp(40px, 6vw, 70px);
 }
 
 .cards {
@@ -556,7 +630,7 @@ nav .active a::after {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     max-width: 1800px; 
-    margin: 120px auto;
+    margin: 12px auto 120px;
     padding: 80px;     
 }
 
@@ -594,7 +668,8 @@ nav .active a::after {
     margin: 15px 0 25px;
 }
 
-.card button {
+.card button,
+.card-link {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -617,6 +692,7 @@ nav .active a::after {
 }
 
 .card button::after,
+.card-link::after,
 .all-btn::after {
     content: "";
     position: absolute;
@@ -663,6 +739,8 @@ nav .active a::after {
 
 .card button:hover,
 .card button:focus-visible,
+.card-link:hover,
+.card-link:focus-visible,
 .all-btn:hover,
 .all-btn:focus-visible {
     transform: translateY(-3px);
@@ -676,6 +754,8 @@ nav .active a::after {
 
 .card button:hover::after,
 .card button:focus-visible::after,
+.card-link:hover::after,
+.card-link:focus-visible::after,
 .all-btn:hover::after,
 .all-btn:focus-visible::after {
     opacity: 1;
@@ -683,12 +763,12 @@ nav .active a::after {
 }
 
 .card button:active,
+.card-link:active,
 .all-btn:active {
     transform: translateY(-1px);
 }
 
-
-/* Контейнер с бонусами для покупателя */
+/* Бонусы на главной странице */
 .bonus-container {
     max-width: 1600px;
     margin: 120px auto;
@@ -804,11 +884,77 @@ nav .active a::after {
 .slider-btn:active {
     transform: translateY(-1px);
 }
-=======
-@import url("./common.css");
-@import url("./services.css");
-@import url("./blog.css");
-@import url("./reviews.css");
-@import url("./profile.css");
-@import url("./news.css");
->>>>>>> 0b95131 (Update project version)
+
+@media (max-width: 1100px) {
+    .cards {
+        gap: 34px;
+        margin: 90px auto;
+        padding: 0 30px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .info--center h1 {
+        min-height: 120px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 60px auto 70px;
+        padding: 0 20px;
+    }
+
+    .card img {
+        height: 240px;
+    }
+
+    .bottom-btn {
+        margin-top: 8px;
+    }
+
+    .bonus-container {
+        margin: 80px auto;
+        padding: 20px;
+    }
+
+    .bonus-header {
+        gap: 20px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .bonus-header h2 {
+        font-size: 36px;
+    }
+
+    .bonus-card {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .bonus-card img,
+    .bonus-text {
+        width: 100%;
+    }
+
+    .bonus-card img {
+        height: 260px;
+    }
+
+    .bonus-text {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+

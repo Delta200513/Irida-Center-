@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irida Center - Блог</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body class="simple-page blog-page">
+    <div class="wrapper">
+        <div class="Logo">
+            <a href="../index.html">
+                <img src="../img/Logo.png" alt="">
+            </a>
+        </div>
+
+
+        <!--Шапка сайта-->
+        <header class="container">
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="news.html">НОВОСТИ</a></li>
+                        <li><a href="reviews.html">ОТЗЫВЫ</a></li>
+                        <li><a href="profile.html">ПРОФИЛЬ</a></li>
+                        <li class="active"><a href="blog.html">БЛОГ</a></li>
+                    </ul>
+                </nav>
+                <button class="phone-copy" type="button" data-copy="+7 (910) 832-04-34">
+                    + 7 (910) 832-04-34
+                </button>
+                <p class="work-time">Ежедневно с 10:00 до 21:00</p>
+            </div>
+        </header>
+
+
+        <main class="blog-shell container" data-blog-root>
+            <section class="blog-heading">
+                <div class="blog-heading__copy">
+                    <p class="blog-heading__eyebrow">Блог Irida Center</p>
+                </div>
+            </section>
+
+            <section class="blog-toolbar" aria-label="Категории блога">
+                <p class="blog-toolbar__count" id="blog-toolbar-count">9 материалов</p>
+                <div class="blog-toolbar__chips">
+                    <button class="blog-chip is-active" type="button" data-blog-filter="all">Все статьи</button>
+                    <button class="blog-chip" type="button" data-blog-filter="paint-protection">Защита кузова</button>
+                    <button class="blog-chip" type="button" data-blog-filter="interior">Салон</button>
+                    <button class="blog-chip" type="button" data-blog-filter="polishing">Полировка</button>
+                    <button class="blog-chip" type="button" data-blog-filter="owner-advice">Советы владельцам</button>
+                </div>
+            </section>
+
+            <section class="blog-posts" id="blog-posts">
+                <article class="blog-post blog-post--featured" data-blog-category="owner-advice">
+                    <div class="blog-post__thumb blog-post__thumb--image">
+                        <img src="../img/Blog/GT-40.png" alt="Ford GT-40">
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>30 апреля 2026</span>
+                        </div>
+                        <h2>Как сохранить внешний вид автомобиля между визитами в студию</h2>
+                        <p>
+                            Базовый уход работает лучше редких генеральных уборок. Для повседневной машины полезнее
+                            мыть кузов регулярно, использовать только автомобильную химию и не оставлять воду сохнуть
+                            на поверхности сама по себе.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>Мыть автомобиль каждые 1-3 недели и сразу сушить его после мойки, чтобы не оставались водяные пятна.</li>
+                            <li>Для кузова и салона лучше использовать специализированные авто-средства: бытовая химия может повредить покрытие, резину и пластик.</li>
+                            <li>Отдельное внимание стоит уделять порогам, аркам и низу кузова, где грязь и соли быстрее всего запускают коррозию.</li>
+                        </ul>
+                        <a class="blog-button blog-button--primary" href="services.html">Перейти к услугам</a>
+                    </div>
+                </article>
+
+
+                
+                <!--Карточки блога-->
+                <article class="blog-post" data-blog-category="paint-protection">
+                    <div class="blog-post__thumb blog-post__thumb--coating">
+                        <img
+                            src="../img/Blog/Ceram.png"
+                            alt="Керамика или пленка"
+                            loading="lazy"
+                        >
+                        <span>Защита кузова</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>28 апреля 2026</span>
+                        </div>
+                        <h2>Керамика или пленка: что лучше выбрать под твой стиль эксплуатации</h2>
+                        <p>
+                            У этих решений разная логика ухода: керамика упрощает мойку и добавляет гидрофобность, а
+                            пленка сильнее защищает от сколов, но требует бережной мойки без жесткого контакта.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>Для керамики Ceramic Pro рекомендует ручную мойку, pH-нейтральный шампунь без воска и работу в тени или в прохладное время дня.</li>
+                            <li>3M для PPF советует по возможности мыть вручную, а если ехать на мойку, выбирать только touchless-вариант без щеток.</li>
+                            <li>После покрытия не стоит тереть сухую грязь или использовать один и тот же инвентарь для кузова и колес.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="interior">
+                    <div class="blog-post__thumb blog-post__thumb--salon">
+                        <img
+                            src="../img/Blog/Dry_Cleaning.png"
+                            alt="Глубокая химчистка салона"
+                            loading="lazy"
+                        >
+                        <span>Салон</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>25 апреля 2026</span>
+                        </div>
+                        <h2>Когда салону действительно нужна глубокая химчистка, а не обычная уборка</h2>
+                        <p>
+                            Если в салоне запах, въевшиеся пятна, много пыли в швах и грязь в ковре, поверхностной
+                            уборки уже мало. Важна не только чистота, но и безопасность: мусор и пыль в салоне реально мешают эксплуатации.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>AAA советует начинать с разборки салона и тщательного пылесоса, особенно в стыках сидений, карманах и под креслами.</li>
+                            <li>Для пластика, кожи и винила лучше использовать автомобильный очиститель с UV-защитой, а не универсальную бытовую химию.</li>
+                            <li>Не оставляй ковры и обивку влажными: сырость под матами быстро приводит к запаху, плесени и пятнам.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="polishing">
+                    <div class="blog-post__thumb blog-post__thumb--polish">
+                        <img
+                            src="../img/Blog/Black.png"
+                            alt="Уход за черным кузовом"
+                            loading="lazy"
+                        >
+                        <span>Полировка</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>22 апреля 2026</span>
+                        </div>
+                        <h2>Почему черный кузов требует другого подхода к уходу и мойке</h2>
+                        <p>
+                            На черном цвете быстрее всего видно микроцарапины, разводы и пыль. Именно поэтому темный
+                            кузов сильнее страдает от сухих протирок и неаккуратной мойки.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>Griot’s Garage предупреждает: одна из главных причин “паутинки” на лаке — вытирать сухой или плохо промытый кузов полотенцем.</li>
+                            <li>Перед мойкой машину нужно хорошо ополоснуть, а варежку или губку регулярно промывать, чтобы частицы грязи не работали как наждачка.</li>
+                            <li>Мой автомобиль только на остывшей поверхности и не под прямым солнцем: на горячем лаке вода и шампунь оставляют следы быстрее.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="owner-advice">
+                    <div class="blog-post__thumb blog-post__thumb--sale">
+                        <img
+                            src="../img/Blog/Sale-blog.png"
+                            alt="Подготовка автомобиля к продаже"
+                            loading="lazy"
+                        >
+                        <span>Подготовка к продаже</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>18 апреля 2026</span>
+                        </div>
+                        <h2>Как подготовить автомобиль к продаже и визуально поднять его ценность</h2>
+                        <p>
+                            Перед продажей важнее всего убрать очевидные минусы и показать аккуратный, ухоженный
+                            автомобиль. Чистая машина с понятной историей почти всегда воспринимается дороже.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>Kelley Blue Book рекомендует сначала устранить заметные неисправности: треснувшее стекло, шумный выхлоп, сломанные мелочи в салоне.</li>
+                            <li>Тщательная мойка и детейлинг реально повышают привлекательность машины и помогают покупателю воспринимать ее как более ухоженную.</li>
+                            <li>К продаже полезно подготовить сервисные записи и сделать много качественных фото кузова, салона, панели и важных деталей.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="owner-advice">
+                    <div class="blog-post__thumb blog-post__thumb--wash">
+                        <img
+                            src="../img/Blog/Washing.png"
+                            alt="Ежедневный уход после мойки"
+                            loading="lazy"
+                        >
+                        <span>Ежедневный уход</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>14 апреля 2026</span>
+                        </div>
+                        <h2>Что делать после мойки, чтобы на кузове не оставались разводы и следы воды</h2>
+                        <p>
+                            Разводы чаще появляются не из-за самой мойки, а из-за того, что вода остается на кузове,
+                            стеклах и в щелях. Правильная сушка почти так же важна, как и сам шампунь.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>AAA советует сушить кузов сразу после мойки, а не ждать естественного высыхания: так меньше риск пятен и минералов на лаке.</li>
+                            <li>Мойку удобнее вести по секциям сверху вниз: вымыл участок, сполоснул, высушил — и только потом переходить дальше.</li>
+                            <li>Для сушки лучше использовать мягкое микрофибровое полотенце или продувку, а не старые тряпки и бумагу.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="owner-advice">
+                    <div class="blog-post__thumb blog-post__thumb--wheels">
+                        <img
+                            src="../img/Blog/Protection.png"
+                            alt="Уход за дисками и колесами"
+                            loading="lazy"
+                        >
+                        <span>Диски и колеса</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>11 апреля 2026</span>
+                        </div>
+                        <h2>Зачем защищать диски и почему на них быстрее всего садится агрессивная грязь</h2>
+                        <p>
+                            Диски и арки собирают тормозную пыль, песок и дорожную химию быстрее остальных зон, поэтому
+                            именно они чаще всего портят общий вид даже у чистой машины.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>AAA рекомендует начинать мойку именно с колес и использовать для них отдельные губки, варежки и щетки.</li>
+                            <li>Michelin советует ежемесячно проверять глубину протектора и состояние шин, а перестановку колес делать по регламенту производителя или каждые 6 000-8 000 миль.</li>
+                            <li>Сильную грязь и тормозную пыль лучше удалять мягкой щеткой, не перенося этот абразив потом на кузов.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="owner-advice">
+                    <div class="blog-post__thumb blog-post__thumb--season">
+                        <img
+                            src="../img/Blog/Summer.png"
+                            alt="Сезонный уход за автомобилем"
+                            loading="lazy"
+                        >
+                        <span>Сезонный уход</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>7 апреля 2026</span>
+                        </div>
+                        <h2>Что стоит сделать с автомобилем перед летним сезоном после зимней эксплуатации</h2>
+                        <p>
+                            После зимы автомобиль часто выглядит “нормально”, но именно в этот момент на кузове,
+                            в арках и на днище остаются соль, грязь и влага, которые постепенно делают свое дело.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>AAA советует не забывать про мойку днища и скрытых зон, если машина ездила по реагентам, грязи и снежной каше.</li>
+                            <li>Kelley Blue Book напоминает, что соль, птичий помет, следы воды и насекомые нельзя оставлять на кузове надолго — они повреждают покрытие.</li>
+                            <li>Весной полезно проверить давление в шинах, состояние протектора и общий вид арок, порогов и нижней части дверей.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-blog-category="polishing">
+                    <div class="blog-post__thumb blog-post__thumb--care">
+                        <img
+                            src="../img/Blog/Error.png"
+                            alt="Ошибки после полировки"
+                            loading="lazy"
+                        >
+                        <span>Советы владельцам</span>
+                    </div>
+                    <div class="blog-post__content">
+                        <div class="blog-post__meta">
+                            <span>Irida Center</span>
+                            <span>3 апреля 2026</span>
+                        </div>
+                        <h2>Ошибки после полировки, из-за которых блеск кузова уходит слишком быстро</h2>
+                        <p>
+                            После полировки лак особенно хочется “поддерживать блеском”, но именно в этот момент люди
+                            чаще всего и создают новые микроцарапины неправильным уходом.
+                        </p>
+                        <ul class="blog-post__tips">
+                            <li>Не протирай пыль с сухого кузова: Griot’s Garage считает это одной из самых частых причин новых swirl marks.</li>
+                            <li>Не используй инвентарь для колес на кузове и не суши машину грязным полотенцем — абразивные частицы быстро убивают свежий глянец.</li>
+                            <li>Для защищенного кузова безопаснее мягкая ручная мойка, чистая микрофибра и химия без агрессивных бытовых добавок.</li>
+                        </ul>
+                        <a class="blog-button blog-button--outline" href="services.html">Подробнее</a>
+                    </div>
+                </article>
+            </section>
+
+            <nav class="blog-pagination" id="blog-pagination" aria-label="Страницы блога">
+                <button class="blog-page-link is-current" type="button">1</button>
+                <button class="blog-page-link" type="button">2</button>
+                <button class="blog-page-link" type="button">3</button>
+                <button class="blog-page-link" type="button">Следующая</button>
+            </nav>
+
+            <section class="blog-cta">
+                <div class="blog-cta__copy">
+                    <p class="blog-heading__eyebrow">Есть вопрос по автомобилю?</p>
+                    <h2>Оставь заявку и мы подскажем, какая услуга подойдет именно тебе</h2>
+                </div>
+
+                <form class="blog-cta__form" id="blog-cta-form">
+                    <label class="blog-field">
+                        <span>Имя</span>
+                        <input type="text" name="name" placeholder="Как к тебе обращаться" minlength="2" maxlength="80" autocomplete="name" required>
+                    </label>
+
+                    <label class="blog-field">
+                        <span>Телефон</span>
+                        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" pattern="^\+?[0-9\s()\-]{10,}$" inputmode="tel" autocomplete="tel" maxlength="18" required>
+                    </label>
+
+                    <label class="blog-field blog-field--wide">
+                        <span>Комментарий</span>
+                        <textarea name="message" rows="4" placeholder="Например: хочу подобрать защиту кузова для нового автомобиля" maxlength="1000"></textarea>
+                    </label>
+
+                    <button class="blog-button blog-button--primary" type="submit">Отправить заявку</button>
+                </form>
+            </section>
+
+            <div class="blog-cta__status" id="blog-cta-status" aria-live="polite"></div>
+
+            <section class="blog-contact">
+                <article class="blog-contact__card">
+                    <span>Телефон</span>
+                    <a href="tel:+79108320434">+7 (910) 832-04-34</a>
+                </article>
+
+                <article class="blog-contact__card">
+                    <span>Режим работы</span>
+                    <strong>Ежедневно с 10:00 до 21:00</strong>
+                </article>
+
+                <article class="blog-contact__card">
+                    <span>Полезные разделы</span>
+                    <div class="blog-contact__links">
+                        <a href="services.html">Услуги</a>
+                        <a href="reviews.html">Отзывы</a>
+                        <a href="news.html">Новости</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="../js/site-config.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/blog-page.js"></script>
+</body>
+</html>

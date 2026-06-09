@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irida Center - Услуги</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+<body class="simple-page services-page">
+    <div class="wrapper">
+        <div class="Logo">
+            <a href="../index.html">
+                <img src="../img/Logo.png" alt="">
+            </a>
+        </div>
+
+        <header class="container">
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                        <li class="active"><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="news.html">НОВОСТИ</a></li>
+                        <li><a href="reviews.html">ОТЗЫВЫ</a></li>
+                        <li><a href="profile.html">ПРОФИЛЬ</a></li>
+                        <li><a href="blog.html">БЛОГ</a></li>
+                    </ul>
+                </nav>
+                <button class="phone-copy" type="button" data-copy="+7 (910) 832-04-34">
+                    + 7 (910) 832-04-34
+                </button>
+                <p class="work-time">Ежедневно с 10:00 до 21:00</p>
+            </div>
+        </header>
+
+        <section class="pricing-showcase pricing-showcase--services" id="service-price-list">
+            <div class="pricing-shell">
+                <div class="pricing-heading">
+                    <p class="pricing-kicker">Подробный прайс</p>
+                    <h2>Цены на услуги по классам автомобилей</h2>
+                    <p class="service-request-note">
+                        Цены в прайсе ориентировочные. Финальную стоимость менеджер подтверждает после уточнения автомобиля,
+                        состояния кузова и точного объёма работ.
+                    </p>
+                </div>
+
+                <div class="pricing-legend" aria-label="Классы автомобилей">
+                    <span>1 класс</span>
+                    <span>2 класс</span>
+                    <span>3 класс</span>
+                    <span>4 класс</span>
+                    <span>5 класс</span>
+                </div>
+
+                <div class="service-cart-bar">
+                    <div class="service-cart-bar__copy">
+                        <p class="service-cart-bar__kicker">Предварительная заявка</p>
+                        <p class="service-cart-bar__lead">
+                            Добавляй интересующие услуги в заявку и отправляй список менеджеру. Мы получим твой выбор,
+                            свяжемся с тобой и уточним итоговую стоимость и детали работ.
+                        </p>
+                    </div>
+                    <button class="service-cart-toggle" id="service-cart-toggle" type="button">
+                        Заявка
+                        <span class="service-cart-toggle__count" id="service-cart-toggle-count">0</span>
+                    </button>
+                </div>
+
+                <div class="pricing-accordion" id="pricing-accordion"></div>
+
+                <aside class="service-cart-panel" id="service-cart-panel" aria-labelledby="service-cart-title">
+                    <div class="service-cart-panel__header">
+                        <div>
+                            <p class="service-cart-panel__kicker">Выбранные услуги</p>
+                            <h3 id="service-cart-title">Предварительная заявка</h3>
+                        </div>
+                        <button class="service-cart-close" id="service-cart-close" type="button" aria-label="Закрыть заявку">×</button>
+                    </div>
+
+                    <div class="service-cart-status" id="service-cart-status" aria-live="polite"></div>
+                    <div class="service-cart-contact" id="service-cart-contact"></div>
+                    <div class="service-cart-empty" id="service-cart-empty">Пока ничего не добавлено. Наведи на цену и выбери нужную услугу.</div>
+                    <div class="service-cart-items" id="service-cart-items"></div>
+
+                    <div class="service-cart-panel__footer">
+                        <div class="service-cart-summary">
+                            <span>Услуг в заявке</span>
+                            <strong id="service-cart-total-count">0</strong>
+                        </div>
+                        <div class="service-cart-actions">
+                            <button class="service-cart-secondary" id="service-cart-clear" type="button">Очистить</button>
+                            <button class="service-cart-primary" id="service-cart-submit" type="button">Отправить заявку</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+    <div class="service-lead-modal" id="service-lead-modal" hidden>
+        <div class="service-lead-modal__backdrop" data-service-modal-close></div>
+        <div class="service-lead-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="service-lead-title">
+            <button class="service-lead-modal__close" type="button" data-service-modal-close aria-label="Закрыть форму">×</button>
+            <p class="service-cart-panel__kicker">Контакты для заявки</p>
+            <h3 id="service-lead-title">Оставь контакты или войди в профиль</h3>
+            <p class="service-lead-modal__copy">
+                Чтобы сохранить услуги в предварительной заявке, пройди регистрацию на странице профиля или оставь имя,
+                фамилию и телефон. Менеджер использует эти контакты, чтобы уточнить заказ и финальную стоимость.
+            </p>
+            <a class="service-cart-secondary service-cart-secondary--link" href="profile.html">Перейти к регистрации</a>
+
+            <form class="service-lead-form" id="service-lead-form">
+                <label class="service-lead-field">
+                    <span>Имя</span>
+                    <input type="text" name="first_name" minlength="2" maxlength="40" autocomplete="given-name" required>
+                </label>
+
+                <label class="service-lead-field">
+                    <span>Фамилия</span>
+                    <input type="text" name="last_name" minlength="2" maxlength="40" autocomplete="family-name" required>
+                </label>
+
+                <label class="service-lead-field service-lead-field--wide">
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" pattern="^\+?[0-9\s()\-]{10,}$" inputmode="tel" autocomplete="tel" maxlength="18" required>
+                </label>
+
+                <button class="service-cart-primary" type="submit">Сохранить и добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/site-config.js"></script>
+    <script src="../js/pricing-data.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/services-cart.js"></script>
+</body>
+</html>

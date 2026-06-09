@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irida Center - Профиль</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body class="simple-page profile-page">
+    <div class="wrapper">
+        <div class="Logo">
+            <a href="../index.html">
+                <img src="../img/Logo.png" alt="">
+            </a>
+        </div>
+
+        <header class="container">
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="news.html">НОВОСТИ</a></li>
+                        <li><a href="reviews.html">ОТЗЫВЫ</a></li>
+                        <li class="active"><a href="profile.html">ПРОФИЛЬ</a></li>
+                        <li><a href="blog.html">БЛОГ</a></li>
+                    </ul>
+                </nav>
+                <button class="phone-copy" type="button" data-copy="+7 (910) 832-04-34">
+                    + 7 (910) 832-04-34
+                </button>
+                <p class="work-time">Ежедневно с 10:00 до 21:00</p>
+            </div>
+        </header>
+
+        <main class="auth-shell container" data-auth-root>
+            <section class="auth-modal" id="auth-modal">
+                <div class="auth-tabs" role="tablist" aria-label="Вход или регистрация">
+                    <button
+                        class="auth-tab is-active"
+                        id="auth-tab-login"
+                        type="button"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="auth-panel-login"
+                        data-auth-tab="login"
+                    >
+                        Войти
+                    </button>
+                    <button
+                        class="auth-tab"
+                        id="auth-tab-register"
+                        type="button"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="auth-panel-register"
+                        data-auth-tab="register"
+                    >
+                        Регистрация
+                    </button>
+                </div>
+
+                <section class="auth-card auth-oauth">
+                    <div class="auth-oauth__actions">
+                        <a class="auth-social-button auth-social-button--yandex" data-oauth-provider="yandex" href="#">
+                            Войти через Яндекс ID
+                        </a>
+                    </div>
+                </section>
+
+                <div class="auth-divider" aria-hidden="true">
+                    <span>или по email и паролю</span>
+                </div>
+
+                <div class="auth-status" id="auth-status" aria-live="polite"></div>
+
+                <div class="auth-panels" id="auth-panels">
+                    <section
+                        class="auth-panel is-active"
+                        id="auth-panel-login"
+                        role="tabpanel"
+                        aria-labelledby="auth-tab-login"
+                        data-auth-panel="login"
+                    >
+                        <form class="auth-form auth-form--login" id="login-form">
+                            <label class="auth-field">
+                                <span>Email</span>
+                                <input type="email" name="email" placeholder="mail@example.com" inputmode="email" autocomplete="username email" maxlength="254" required>
+                            </label>
+
+                            <label class="auth-field">
+                                <span>Пароль</span>
+                                <input type="password" name="password" placeholder="Твой пароль" minlength="8" maxlength="128" autocomplete="current-password" required>
+                            </label>
+
+                            <p class="auth-form-note auth-form-note--muted">
+                                Если раньше входил через Яндекс ID, можно использовать быстрый вход выше.
+                            </p>
+
+                            <button class="auth-submit auth-submit--secondary" type="submit">Войти</button>
+                        </form>
+                    </section>
+
+                    <section
+                        class="auth-panel"
+                        id="auth-panel-register"
+                        role="tabpanel"
+                        aria-labelledby="auth-tab-register"
+                        data-auth-panel="register"
+                        hidden
+                    >
+                        <form class="auth-form auth-form--register" id="register-form">
+                            <div class="auth-form-grid">
+                                <label class="auth-field auth-field--wide">
+                                    <span>Имя и фамилия</span>
+                                    <input type="text" name="full_name" placeholder="Иван Петров" minlength="4" maxlength="80" autocomplete="name" required>
+                                    <small class="auth-field__hint">
+                                        Так менеджеру будет проще связаться с тобой по заявке.
+                                    </small>
+                                </label>
+
+                                <label class="auth-field">
+                                    <span>Email</span>
+                                    <input type="email" name="email" placeholder="mail@example.com" inputmode="email" autocomplete="email" maxlength="254" required>
+                                </label>
+
+                                <label class="auth-field">
+                                    <span>Телефон</span>
+                                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" pattern="^\+?[0-9\s()\-]{10,}$" inputmode="tel" autocomplete="tel" maxlength="18" required>
+                                </label>
+
+                                <label class="auth-field">
+                                    <span>Пароль</span>
+                                    <input type="password" name="password" placeholder="Минимум 8 символов" minlength="8" maxlength="128" autocomplete="new-password" required>
+                                </label>
+
+                                <label class="auth-field">
+                                    <span>Подтверждение пароля</span>
+                                    <input type="password" name="password_confirm" placeholder="Повтори пароль" minlength="8" maxlength="128" autocomplete="new-password" required>
+                                </label>
+                            </div>
+
+                            <p class="auth-form-note">
+                                Нажимая кнопку, ты создаёшь аккаунт Irida Center и сразу входишь в него.
+                            </p>
+
+                            <button class="auth-submit" type="submit">Зарегистрироваться</button>
+                        </form>
+                    </section>
+                </div>
+
+            </section>
+
+            <div class="profile-dashboard" id="profile-dashboard" hidden>
+                <div class="profile-dashboard__primary">
+                    <section class="account-card" id="account-card" hidden>
+                        <div class="account-card__heading">
+                            <div>
+                                <p class="auth-kicker">Аккаунт активен</p>
+                                <h2>Профиль пользователя</h2>
+                            </div>
+                            <button class="auth-logout" id="logout-button" type="button">Выйти</button>
+                        </div>
+
+                        <div class="account-avatar">
+                            <div class="account-avatar__media" id="account-avatar-media" aria-hidden="true">
+                                <img class="account-avatar__image" id="account-avatar-image" alt="Аватар профиля" hidden>
+                                <span class="account-avatar__initials" id="account-avatar-initials"></span>
+                            </div>
+                            <div class="account-avatar__body">
+                                <div class="account-avatar__copy">
+                                    <p class="account-avatar__title">Фото профиля</p>
+                                    <p class="account-avatar__hint">JPG, PNG или WEBP до 3 МБ.</p>
+                                </div>
+                                <div class="account-avatar__actions">
+                                    <button class="account-avatar__action" id="account-avatar-upload-trigger" type="button">
+                                        Выбрать фото
+                                    </button>
+                                    <button class="account-avatar__action account-avatar__action--secondary" id="account-avatar-remove" type="button" hidden>
+                                        Удалить
+                                    </button>
+                                </div>
+                                <input class="account-avatar__input" id="account-avatar-input" type="file" accept=".jpg,.jpeg,.png,.webp" hidden>
+                                <div class="auth-status account-avatar__status" id="account-avatar-status" aria-live="polite"></div>
+                            </div>
+                        </div>
+
+                        <div class="account-card__grid">
+                            <div class="account-card__item">
+                                <span>Имя</span>
+                                <strong id="account-name">-</strong>
+                            </div>
+
+                            <div class="account-card__item">
+                                <span>Email</span>
+                                <strong id="account-email">-</strong>
+                            </div>
+
+                            <div class="account-card__item">
+                                <span>Телефон</span>
+                                <strong id="account-phone">-</strong>
+                            </div>
+
+                            <div class="account-card__item">
+                                <span>Роль</span>
+                                <strong id="account-role">-</strong>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="profile-completion-card" id="profile-completion-card" hidden>
+                        <div class="profile-completion-card__heading">
+                            <div>
+                                <p class="auth-kicker" id="profile-completion-kicker">Заверши профиль</p>
+                                <h3 id="profile-completion-title">Добавь имя, фамилию и телефон</h3>
+                            </div>
+                        </div>
+
+                        <div class="auth-status profile-completion-status" id="profile-completion-status" aria-live="polite"></div>
+
+                        <form class="auth-form profile-completion-form" id="profile-completion-form">
+                            <div class="auth-form-grid">
+                                <label class="auth-field">
+                                    <span>Имя</span>
+                                    <input type="text" name="first_name" placeholder="Иван" minlength="2" maxlength="40" autocomplete="given-name" required>
+                                </label>
+
+                                <label class="auth-field">
+                                    <span>Фамилия</span>
+                                    <input type="text" name="last_name" placeholder="Петров" minlength="2" maxlength="40" autocomplete="family-name" required>
+                                </label>
+
+                                <label class="auth-field auth-field--wide">
+                                    <span>Телефон</span>
+                                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" pattern="^\+?[0-9\s()\-]{10,}$" inputmode="tel" autocomplete="tel" maxlength="18" required>
+                                </label>
+                            </div>
+
+                            <button class="auth-submit" id="profile-completion-submit" type="submit">Сохранить данные</button>
+                        </form>
+                    </section>
+                </div>
+
+                <div class="profile-dashboard__secondary">
+                    <section class="orders-history-card" id="orders-history-card" hidden>
+                        <div class="orders-history-card__heading">
+                            <div>
+                                <p class="auth-kicker">История заявок</p>
+                                <h3>Активные и недавние заказы</h3>
+                            </div>
+                        </div>
+
+                        <div class="orders-history-grid">
+                            <section class="orders-history-column">
+                                <div class="orders-history-column__head">
+                                    <h4>Активные</h4>
+                                    <span id="orders-active-count">0</span>
+                                </div>
+                                <div class="orders-history-list" id="orders-active-list"></div>
+                            </section>
+
+                            <section class="orders-history-column">
+                                <div class="orders-history-column__head">
+                                    <h4>Недавние</h4>
+                                    <span id="orders-recent-count">0</span>
+                                </div>
+                                <div class="orders-history-list" id="orders-recent-list"></div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section class="admin-dashboard-card" id="admin-dashboard-card" hidden>
+                        <div class="admin-dashboard-card__heading">
+                            <div>
+                                <p class="auth-kicker">Панель администратора</p>
+                                <h3>Заявки и обращения клиентов</h3>
+                            </div>
+                        </div>
+
+                        <div class="admin-dashboard-summary">
+                            <div class="admin-dashboard-summary__item">
+                                <span>Новые заявки</span>
+                                <strong id="admin-service-new-count">0</strong>
+                            </div>
+                            <div class="admin-dashboard-summary__item">
+                                <span>Всего заявок</span>
+                                <strong id="admin-service-total-count">0</strong>
+                            </div>
+                            <div class="admin-dashboard-summary__item">
+                                <span>Новые обращения</span>
+                                <strong id="admin-contact-new-count">0</strong>
+                            </div>
+                            <div class="admin-dashboard-summary__item">
+                                <span>Всего обращений</span>
+                                <strong id="admin-contact-total-count">0</strong>
+                            </div>
+                        </div>
+
+                        <div class="admin-dashboard-grid">
+                            <section class="admin-dashboard-column">
+                                <div class="admin-dashboard-column__head">
+                                    <h4>Заявки на услуги</h4>
+                                </div>
+                                <div class="admin-dashboard-list" id="admin-service-requests-list"></div>
+                            </section>
+
+                            <section class="admin-dashboard-column">
+                                <div class="admin-dashboard-column__head">
+                                    <h4>Контактные обращения</h4>
+                                </div>
+                                <div class="admin-dashboard-list" id="admin-contact-requests-list"></div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/site-config.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/profile-auth.js"></script>
+</body>
+</html>

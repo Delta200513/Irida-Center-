@@ -1,0 +1,16 @@
+[Unit]
+Description=Irida Center FastAPI backend
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/irida-center/backend
+EnvironmentFile=/var/www/irida-center/backend/.env
+ExecStart=/var/www/irida-center/backend/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

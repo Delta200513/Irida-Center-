@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irida Center - Отзывы</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reviews.css">
+</head>
+<body class="simple-page reviews-page">
+    <div class="wrapper">
+        <div class="Logo">
+            <a href="../index.html">
+                <img src="../img/Logo.png" alt="">
+            </a>
+        </div>
+
+        <header class="container">
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="services.html">УСЛУГИ</a></li>
+                        <li><a href="news.html">НОВОСТИ</a></li>
+                        <li class="active"><a href="reviews.html">ОТЗЫВЫ</a></li>
+                        <li><a href="profile.html">ПРОФИЛЬ</a></li>
+                        <li><a href="blog.html">БЛОГ</a></li>
+                    </ul>
+                </nav>
+                <button class="phone-copy" type="button" data-copy="+7 (910) 832-04-34">
+                    + 7 (910) 832-04-34
+                </button>
+                <p class="work-time">Ежедневно с 10:00 до 21:00</p>
+            </div>
+        </header>
+
+        <main class="reviews-shell container" data-reviews-root>
+            <section class="reviews-layout">
+                <aside class="reviews-sidebar">
+                    <article class="reviews-card reviews-score-card">
+                        <div class="reviews-score-card__value" id="reviews-average-rating">0.0</div>
+                        <div class="reviews-score-card__stars" id="reviews-average-stars" aria-label="Средняя оценка 0 из 5"></div>
+                        <p class="reviews-score-card__label">Средняя оценка по опубликованным отзывам</p>
+
+                        <div class="reviews-score-card__stats">
+                            <div>
+                                <span>Всего отзывов</span>
+                                <strong id="reviews-total-count">0</strong>
+                            </div>
+                            <div>
+                                <span>Подтверждённых</span>
+                                <strong id="reviews-verified-count">0</strong>
+                            </div>
+                            <div>
+                                <span>С ответом студии</span>
+                                <strong id="reviews-replies-count">0</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <section class="reviews-card reviews-submit-card">
+                        <div class="reviews-card__header">
+                            <h2>Оставить отзыв</h2>
+                        </div>
+
+                        <div class="reviews-auth-hint" id="reviews-auth-hint" hidden></div>
+
+                        <form class="reviews-form" id="review-form" hidden>
+                            <div class="reviews-form__meta" id="reviews-form-meta"></div>
+
+                            <label class="reviews-field" id="review-request-field" hidden>
+                                <span>Привязать к заявке</span>
+                                <select name="service_request_id" id="review-request-select">
+                                    <option value="">Без привязки к заявке</option>
+                                </select>
+                            </label>
+
+                            <div class="reviews-form__rating">
+                                <span>Оценка</span>
+                                <div class="reviews-rating-picker" id="reviews-rating-picker">
+                                    <button class="reviews-rating-star is-active" type="button" data-rating-value="1" aria-label="1 звезда">&#9733;</button>
+                                    <button class="reviews-rating-star is-active" type="button" data-rating-value="2" aria-label="2 звезды">&#9733;</button>
+                                    <button class="reviews-rating-star is-active" type="button" data-rating-value="3" aria-label="3 звезды">&#9733;</button>
+                                    <button class="reviews-rating-star is-active" type="button" data-rating-value="4" aria-label="4 звезды">&#9733;</button>
+                                    <button class="reviews-rating-star is-active" type="button" data-rating-value="5" aria-label="5 звёзд">&#9733;</button>
+                                </div>
+                                <input type="hidden" name="rating" id="review-rating" value="5">
+                            </div>
+
+                            <label class="reviews-field">
+                                <span>Услуга или повод обращения</span>
+                                <input type="text" name="service_label" placeholder="Например: полировка, керамика, консультация" maxlength="120">
+                            </label>
+
+                            <label class="reviews-field">
+                                <span>Короткий заголовок</span>
+                                <input type="text" name="headline" placeholder="Например: отличный результат на чёрном кузове" maxlength="120">
+                            </label>
+
+                            <label class="reviews-field">
+                                <span>Текст отзыва</span>
+                                <textarea name="review_text" rows="6" placeholder="Расскажи, что понравилось, как прошла работа и какой результат ты получил." minlength="12" maxlength="3000" required></textarea>
+                            </label>
+
+                            <div class="reviews-form__status" id="reviews-form-status" aria-live="polite"></div>
+                            <button class="reviews-submit" type="submit">Опубликовать отзыв</button>
+                        </form>
+                    </section>
+
+                    <section class="reviews-card reviews-admin-card" id="reviews-admin-card" hidden>
+                        <div class="reviews-card__header">
+                            <h2>Панель студии</h2>
+                            <p>Здесь администратор может публиковать ответы и скрывать отзывы без перехода в отдельную админку.</p>
+                        </div>
+                        <div class="reviews-admin-list" id="reviews-admin-list"></div>
+                    </section>
+                </aside>
+
+                <section class="reviews-feed">
+                    <div class="reviews-toolbar">
+                        <div class="reviews-toolbar__top">
+                            <h2>Лента отзывов</h2>
+                            <p id="reviews-toolbar-count">Загружаем отзывы...</p>
+                        </div>
+
+                        <div class="reviews-filters" role="tablist" aria-label="Фильтр отзывов по оценке">
+                            <button class="reviews-filter is-active" type="button" data-review-filter="all">Все</button>
+                            <button class="reviews-filter" type="button" data-review-filter="5">5 звёзд</button>
+                            <button class="reviews-filter" type="button" data-review-filter="4">4 звезды</button>
+                            <button class="reviews-filter" type="button" data-review-filter="3">3 звезды</button>
+                            <button class="reviews-filter" type="button" data-review-filter="2">2 звезды</button>
+                            <button class="reviews-filter" type="button" data-review-filter="1">1 звезда</button>
+                        </div>
+                    </div>
+
+                    <div class="reviews-list" id="reviews-list"></div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/site-config.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/reviews-page.js"></script>
+</body>
+</html>
